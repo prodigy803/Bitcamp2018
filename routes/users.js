@@ -6,12 +6,38 @@ const multer = require('multer');
 const path = require('path');
 const request = require('request');
 const config = require('../config/database');
+const Web3 = require('web3');
 
 // Import Mongoose Model
 const User = require('../models/user');
 
+// web3.eth.getBalance(accounts[3], function(err, getBalance){
+//     if(err == null) console.log(getBalance.c);
+//     var data = getBalance;
+//     console.log(data.c);
+// });
+
+// Connect to TestRPC
+let web3 = new Web3();
+web3.setProvider(new Web3.providers.HttpProvider('http://localhost:8545'));
+
 // Register User
 router.post('/register', (req, res, next) => {
+
+    var count = 0;
+    var ethID = 0;
+
+    User.count(function(err, c) {
+        console.log('Count is ' + c);
+        count = c;
+    });
+
+    web3.eth.getAccounts(function(err, accounts){
+        if(err == null) {
+            console.log(accounts[0]);
+            ethID = accounts[count];
+        }
+    });
 
     var options = {
         uri: 'https://geoip-db.com/json'
@@ -43,7 +69,8 @@ router.post('/register', (req, res, next) => {
                 loc        : [parseFloat(lon),parseFloat(lat)],
                 country    : country,
                 state      : state,
-                city       : city
+                city       : city,
+                ethID      : ethID  
 
             });
 

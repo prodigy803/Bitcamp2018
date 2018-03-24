@@ -27,8 +27,8 @@ const UserSchema = new Schema({
                     type: [Number],  // [<longitude>, <latitude>]
                     index: '2d'      // create the geospatial index
                 },
-    blockID     : String
-
+    ethID       : String
+    
 });
 
 // Define and Export Model
