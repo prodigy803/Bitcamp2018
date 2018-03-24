@@ -1,4 +1,4 @@
 module.exports = {
-  database: 'mongodb://localhost:27017/meanauth',
-  secret: 'my-secret-phrase'
+  database: 'mongodb://bitcamp:bitcamp18@ds159676.mlab.com:59676/bitcamp',
+  secret: 'BitCamp'
 }

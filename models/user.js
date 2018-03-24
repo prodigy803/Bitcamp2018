@@ -4,21 +4,31 @@ const bcrypt = require('bcryptjs');
 // Initalize Schema
 const Schema = mongoose.Schema
 
+
 // Define a UserSchema
 const UserSchema = new Schema({
-    name: String,
-    email: {
-        type: String,
-        required: true
-    },
-    username: {
-        type: String,
-        required: true
-    },
-    password: {
-        type: String,
-        required: true
-    }
+
+    fullName    : String,
+    userName    : String,
+    password    : String,
+    email       : String,
+    proImage    : String,
+    createdAt	: String,
+    tPass	    : String,
+	tPassTime   : String,
+    type        : String,
+    mobNo       : Number,
+    mobVer      : Boolean,
+    emailVer    : Boolean,
+    country     : String,
+    state       : String,
+    city        : String,
+    loc         : {
+                    type: [Number],  // [<longitude>, <latitude>]
+                    index: '2d'      // create the geospatial index
+                },
+    blockID     : String
+
 });
 
 // Define and Export Model
@@ -30,12 +40,12 @@ module.exports.getUserById = (id, callback) => {
     User.findById(id, callback);
 }
 
-module.exports.getUserByUsername = (username, callback) => {
-    const query = { username }
+module.exports.getUserByUserName = (userName, callback) => {
+    const query = { userName }
     User.findOne(query, callback);
 }
 
-module.exports.addUser = (newUser, callback) => { 
+module.exports.addUser = (newUser, callback) => {
     bcrypt.genSalt(10)
         .then((salt) => bcrypt.hash(newUser.password, salt))
         .then((hash) => {
@@ -50,3 +60,5 @@ module.exports.comparePassword = (candidatePassword, hash, callback) => {
             callback(null, isMatch);
         }).catch((err) => console.log('There was an error with authentication.'));
     }
+
+
