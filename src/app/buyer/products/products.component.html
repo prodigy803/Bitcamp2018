@@ -61,309 +61,92 @@
           <div class="col-md-3">
             <div class="collapse-panel">
               <div class="card-body">
-                <div class="card card-refine card-plain">
-                  <h4 class="card-title">
-                                    Refine
-                                    <button class="btn btn-default btn-icon btn-neutral pull-right" rel="tooltip" title="Reset Filter">
-                                        <i class="arrows-1_refresh-69 now-ui-icons"></i>
-                                    </button>
-                                </h4>
-                  <div class="card-header" role="tab" id="headingOne">
-                    <h6 class="mb-0">
-                               <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                 Price Range
-
-                                 <i class="now-ui-icons arrows-1_minimal-down"></i>
-                               </a>
-                           </h6>
-                  </div>
-
-                  <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
-                    <div class="card-body">
-                      <span id="price-left" class="price-left pull-left" data-currency="&euro;">100</span>
-                      <span id="price-right" class="price-right pull-right" data-currency="&euro;">850</span>
-                      <div class="clearfix"></div>
-                      <div id="sliderRefine" class="slider slider-refine"></div>
-                    </div>
-                  </div>
+                <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                  <ngb-panel title="Simple">
+                    <ng-template ngbPanelContent>
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+                      aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                      sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+                      craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                      occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                      labore sustainable VHS.
+                    </ng-template>
+                  </ngb-panel>
+                  <div class="card card-plain">
+                  <ngb-panel>
+                    <ng-template ngbPanelTitle>
+                      <div class="card-header" role="tab" id="headingOne">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                              Description
+                              <i class="now-ui-icons arrows-1_minimal-down"></i>
+                          </a>
+                      </div>
+                    </ng-template>
+                    <ng-template ngbPanelContent>
+                      <div class="card-body">
+                      <p>
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+                      aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                      sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+                      craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                      occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                      labore sustainable VHS.
+                      </p>
+                      </div>
+                    </ng-template>
+                  </ngb-panel>
                 </div>
-                <div class="card card-refine card-plain">
-                  <div class="card-header" role="tab" id="headingTwo">
-                    <h6 class="mb-0">
-                                   <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                     Clothing
+                </ngb-accordion>
+                <!-- <div id="accordion" role="tablist" aria-multiselectable="true" class="card-collapse">
+                  <div class="card card-plain">
+                    <div class="card-header" role="tab" id="headingOne">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                            Description
+                            <i class="now-ui-icons arrows-1_minimal-down"></i>
+                        </a>
+                    </div>
 
-                                     <i class="now-ui-icons arrows-1_minimal-down"></i>
-                                   </a>
-                               </h6>
-                  </div>
-                  <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
-                    <div class="card-body">
-                      <div class="checkbox">
-                        <input id="checkbox1" type="checkbox" checked="">
-                        <label for="checkbox1">
-          								  Blazers
-          							  </label>
-                      </div>
-
-                      <div class="checkbox">
-                        <input id="checkbox2" type="checkbox">
-                        <label for="checkbox2">
-      								 Casual Shirts
-      							  </label>
-                      </div>
-
-                      <div class="checkbox">
-                        <input id="checkbox3" type="checkbox">
-                        <label for="checkbox3">
-      								  Formal Shirts
-      							  </label>
-                      </div>
-
-                      <div class="checkbox">
-                        <input id="checkbox4" type="checkbox">
-                        <label for="checkbox4">
-      								  Jeans
-      							  </label>
-                      </div>
-
-                      <div class="checkbox">
-                        <input id="checkbox5" type="checkbox">
-                        <label for="checkbox5">
-      								  Polos
-      							  </label>
-                      </div>
-
-                      <div class="checkbox">
-                        <input id="checkbox6" type="checkbox">
-                        <label for="checkbox6">
-                                     Pijamas
-                                 </label>
-                      </div>
-
-                      <div class="checkbox">
-                        <input id="checkbox7" type="checkbox">
-                        <label for="checkbox7">
-                                     Shorts
-                                 </label>
-                      </div>
-
-                      <div class="checkbox">
-                        <input id="checkbox8" type="checkbox">
-                        <label for="checkbox8">
-                                    Trousers
-                                </label>
+                    <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" style="">
+                      <div class="card-body">
+                        <p>Eres' daring 'Grigri Fortune' swimsuit has the fit and coverage of a bikini in a one-piece silhouette. This fuchsia style is crafted from the label's sculpting peau douce fabric and has flattering cutouts through the torso and back. Wear yours with mirrored sunglasses on vacation.</p>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="card card-refine card-plain">
-                  <div class="card-header" role="tab" id="headingThree">
-                    <h6 class="mb-0">
-                               <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                 Designer
+                  <div class="card card-plain">
+                    <div class="card-header" role="tab" id="headingTwo">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Designer Information
 
-                                 <i class="now-ui-icons arrows-1_minimal-down"></i>
-                               </a>
-                           </h6>
-                  </div>
-                  <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
-                    <div class="card-body">
-                      <div class="checkbox">
-                        <input id="checkbox9" type="checkbox">
-                        <label for="checkbox9">
-      								  All
-      							  </label>
-                      </div>
-                      <div class="checkbox">
-                        <input id="checkbox10" type="checkbox">
-                        <label for="checkbox10">
-                                     Polo Ralph Lauren
-                                 </label>
-                      </div>
-
-                      <div class="checkbox">
-                        <input id="checkbox11" type="checkbox">
-                        <label for="checkbox11">
-                                    Wooyoungmi
-                                </label>
-                      </div>
-
-                      <div class="checkbox">
-                        <input id="checkbox12" type="checkbox">
-                        <label for="checkbox12">
-                                    Alexander McQueen
-                                </label>
-                      </div>
-                      <div class="checkbox">
-                        <input id="checkbox13" type="checkbox">
-                        <label for="checkbox13">
-                                   Tom Ford
-                               </label>
-                      </div>
-
-                      <div class="checkbox">
-                        <input id="checkbox14" type="checkbox">
-                        <label for="checkbox14">
-                                   AMI
-                               </label>
-                      </div>
-
-                      <div class="checkbox">
-                        <input id="checkbox15" type="checkbox">
-                        <label for="checkbox15">
-                                  Berena
-                              </label>
-                      </div>
-
-                      <div class="checkbox">
-                        <input id="checkbox16" type="checkbox">
-                        <label for="checkbox16">
-                                  Thom Sweeney
-                              </label>
-                      </div>
-
-                      <div class="checkbox">
-                        <input id="checkbox17" type="checkbox">
-                        <label for="checkbox17">
-                                  Burberry Prorsum
-                              </label>
-                      </div>
-
-                      <div class="checkbox">
-                        <input id="checkbox18" type="checkbox">
-                        <label for="checkbox18">
-                                  Calvin Klein
-                              </label>
-                      </div>
-
-                      <div class="checkbox">
-                        <input id="checkbox19" type="checkbox">
-                        <label for="checkbox19">
-                                  Kingsman
-                              </label>
-                      </div>
-
-                      <div class="checkbox">
-                        <input id="checkbox20" type="checkbox">
-                        <label for="checkbox20">
-                                 Club Monaco
-                             </label>
-                      </div>
-
-                      <div class="checkbox">
-                        <input id="checkbox21" type="checkbox">
-                        <label for="checkbox21">
-                                Dolce & Gabbana
-                            </label>
-                      </div>
-
-                      <div class="checkbox">
-                        <input id="checkbox22" type="checkbox">
-                        <label for="checkbox22">
-                                Gucci
-                            </label>
-                      </div>
-
-                      <div class="checkbox">
-                        <input id="checkbox23" type="checkbox">
-                        <label for="checkbox23">
-                               Biglioli
-                           </label>
-                      </div>
-
-                      <div class="checkbox">
-                        <input id="checkbox24" type="checkbox">
-                        <label for="checkbox24">
-                             Lanvin
-                          </label>
-                      </div>
-
-                      <div class="checkbox">
-                        <input id="checkbox25" type="checkbox">
-                        <label for="checkbox25">
-                             Loro Piana
-                         </label>
-                      </div>
-
-                      <div class="checkbox">
-                        <input id="checkbox26" type="checkbox">
-                        <label for="checkbox26">
-                            Massimo Alba
-                        </label>
+                            <i class="now-ui-icons arrows-1_minimal-down"></i>
+                        </a>
+                    </div>
+                    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" style="">
+                      <div class="card-body">
+                        <p>An infusion of West Coast cool and New York attitude, Rebecca Minkoff is synonymous with It girl style. Minkoff burst on the fashion scene with her best-selling 'Morning After Bag' and later expanded her offering with the Rebecca Minkoff Collection - a range of luxe city staples with a "downtown romantic" theme.</p>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="card card-refine card-plain">
-                  <div class="card-header" role="tab" id="headingfour">
-                    <h6 class="mb-0">
-                               <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
-                                 Colour
+                  <div class="card card-plain">
+                    <div class="card-header" role="tab" id="headingThree">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Details and Care
 
-                                 <i class="now-ui-icons arrows-1_minimal-down"></i>
-                               </a>
-                           </h6>
-                  </div>
-                  <div id="collapsefour" class="collapse" role="tabpanel" aria-labelledby="headingfour">
-                    <div class="card-body">
-                      <div class="checkbox">
-                        <input id="checkbox27" type="checkbox">
-                        <label for="checkbox27">
-      								  All
-      							  </label>
-                      </div>
-                      <div class="checkbox">
-                        <input id="checkbox28" type="checkbox">
-                        <label for="checkbox28">
-                                     Black
-                                 </label>
-                      </div>
-
-                      <div class="checkbox">
-                        <input id="checkbox29" type="checkbox">
-                        <label for="checkbox29">
-                                    Blue
-                                </label>
-                      </div>
-
-                      <div class="checkbox">
-                        <input id="checkbox30" type="checkbox">
-                        <label for="checkbox30">
-                                   Brown
-                               </label>
-                      </div>
-
-                      <div class="checkbox">
-                        <input id="checkbox31" type="checkbox">
-                        <label for="checkbox31">
-                                   Gray
-                               </label>
-                      </div>
-
-                      <div class="checkbox">
-                        <input id="checkbox32" type="checkbox">
-                        <label for="checkbox32">
-                                   Green
-                               </label>
-                      </div>
-
-                      <div class="checkbox">
-                        <input id="checkbox33" type="checkbox">
-                        <label for="checkbox33">
-                                    Neutrals
-                                </label>
-                      </div>
-
-                      <div class="checkbox">
-                        <input id="checkbox34" type="checkbox">
-                        <label for="checkbox34">
-                                     Purple
-                                 </label>
+                            <i class="now-ui-icons arrows-1_minimal-down"></i>
+                        </a>
+                    </div>
+                    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" style="">
+                      <div class="card-body">
+                          <ul>
+                               <li>Storm and midnight-blue stretch cotton-blend</li>
+                               <li>Notch lapels, functioning buttoned cuffs, two front flap pockets, single vent, internal pocket</li>
+                               <li>Two button fastening</li>
+                               <li>84% cotton, 14% nylon, 2% elastane</li>
+                               <li>Dry clean</li>
+                          </ul>
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>

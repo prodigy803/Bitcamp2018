@@ -28,8 +28,8 @@ import { AdminComponent } from './admin/admin.component';
 import { ApprovalComponent } from './admin/approval/approval.component';
 
 const appRoutes: Routes = [
-    { path: '', redirectTo: 'index', pathMatch: 'full' },
-    { path: 'index',                component: ComponentsComponent },
+    // { path: '', redirectTo: 'index', pathMatch: 'full' },
+    { path: '',                component: ComponentsComponent },
     { path: 'register',             component: RegisterComponent },
     { path: 'nucleoicons',          component: NucleoiconsComponent },
     { path: 'examples/landing',     component: LandingComponent },

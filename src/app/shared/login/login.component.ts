@@ -41,7 +41,7 @@ export class LoginComponent implements OnInit {
       this.authService.authenticateUser(user).subscribe((data: any) => {
         if (data.success) {
           this.authService.storeUserData(data.token, data.user);
-          this.router.navigateByUrl('/index');
+          this.router.navigateByUrl('/');
         } else {
           this.errSwitch = true;
           this.errMsg = 'Invalid username/password';
