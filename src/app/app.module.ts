@@ -13,6 +13,8 @@ import { ExamplesModule } from './examples/examples.module';
 import { ValidateService } from './services/validate.service';
 import { AuthService } from './services/auth.service';
 import { AuthGuard } from './guards/auth.guard';
+import { MetaCoinService } from './services/meta-coin.service';
+import { Web3Service } from './services/web3.service';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
@@ -77,7 +79,9 @@ const appRoutes: Routes = [
     providers: [
       ValidateService,
       AuthService,
-      AuthGuard
+      AuthGuard,
+      MetaCoinService,
+      Web3Service
     ],
     bootstrap: [AppComponent]
 })
