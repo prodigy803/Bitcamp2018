@@ -33,6 +33,7 @@ import { ApprovalComponent } from './admin/approval/approval.component';
 import { DeliveryComponent } from './admin/delivery/delivery.component';
 import { BcComponent } from './bc/bc.component';
 import { CheckbidsComponent } from './buyer/checkbids/checkbids.component';
+import { CheckBidStatusComponent } from './seller/check-bid-status/check-bid-status.component';
 
 const appRoutes: Routes = [
     // { path: '', redirectTo: 'index', pathMatch: 'full' },
@@ -48,7 +49,8 @@ const appRoutes: Routes = [
     { path: 'approval',             component: ApprovalComponent, canActivate: [AuthGuard] },
     { path: 'delivery',             component: DeliveryComponent, canActivate: [AuthGuard] },
     { path: 'bc',             component: BcComponent, canActivate: [AuthGuard] },
-    { path: 'checkbids',             component: CheckbidsComponent, canActivate: [AuthGuard] }
+    { path: 'checkbids',             component: CheckbidsComponent, canActivate: [AuthGuard] },
+    { path: 'checkbidstatus',             component: CheckBidStatusComponent, canActivate: [AuthGuard] }
 ];
 
 @NgModule({
@@ -65,7 +67,8 @@ const appRoutes: Routes = [
         ApprovalComponent,
         DeliveryComponent,
         BcComponent,
-        CheckbidsComponent
+        CheckbidsComponent,
+        CheckBidStatusComponent
 
     ],
     imports: [
