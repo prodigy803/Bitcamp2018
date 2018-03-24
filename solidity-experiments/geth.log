@@ -1,0 +1,328 @@
+INFO [03-24|23:52:57] Maximum peer count                       ETH=25 LES=0 total=25
+INFO [03-24|23:52:57] Starting peer-to-peer node               instance=Geth/v1.8.2-stable/darwin-amd64/go1.10
+INFO [03-24|23:52:57] Allocated cache and file handles         database=/Users/pushkarajjoshi/Library/Ethereum/testnet/geth/chaindata cache=768 handles=128
+INFO [03-24|23:52:57] Writing custom genesis block 
+INFO [03-24|23:52:57] Persisted trie from memory database      nodes=355 size=65.25kB time=1.431479ms gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [03-24|23:52:57] Initialised chain configuration          config="{ChainID: 3 Homestead: 0 DAO: <nil> DAOSupport: true EIP150: 0 EIP155: 10 EIP158: 10 Byzantium: 1700000 Constantinople: <nil> Engine: ethash}"
+INFO [03-24|23:52:57] Disk storage enabled for ethash caches   dir=/Users/pushkarajjoshi/Library/Ethereum/testnet/geth/ethash count=3
+INFO [03-24|23:52:57] Disk storage enabled for ethash DAGs     dir=/Users/pushkarajjoshi/.ethash                              count=2
+INFO [03-24|23:52:57] Initialising Ethereum protocol           versions="[63 62]" network=3
+INFO [03-24|23:52:57] Loaded most recent local header          number=0 hash=419410…ca4a2d td=1048576
+INFO [03-24|23:52:57] Loaded most recent local full block      number=0 hash=419410…ca4a2d td=1048576
+INFO [03-24|23:52:57] Loaded most recent local fast block      number=0 hash=419410…ca4a2d td=1048576
+INFO [03-24|23:52:57] Regenerated local transaction journal    transactions=0 accounts=0
+INFO [03-24|23:52:57] Starting P2P networking 
+INFO [03-24|23:52:59] UDP listener up                          self=enode://985c74caea515f2b25b9104e59dd58a1836f406c905284f4a2aee52dc65bc704dc6615f21a67d82c1d28f8eb09dfda156f9bccde1e27d7c18fe16281fe1db343@[::]:30303
+INFO [03-24|23:52:59] RLPx listener up                         self=enode://985c74caea515f2b25b9104e59dd58a1836f406c905284f4a2aee52dc65bc704dc6615f21a67d82c1d28f8eb09dfda156f9bccde1e27d7c18fe16281fe1db343@[::]:30303
+INFO [03-24|23:52:59] IPC endpoint opened                      url=/Users/pushkarajjoshi/Library/Ethereum/testnet/geth.ipc
+INFO [03-24|23:52:59] HTTP endpoint opened                     url=http://127.0.0.1:8545                                   cors= vhosts=localhost
+INFO [03-24|23:53:09] Block synchronisation started 
+INFO [03-24|23:53:13] Imported new block headers               count=192 elapsed=1.088s number=192 hash=9d4976…cf6e5b ignored=0
+INFO [03-24|23:53:13] Imported new block receipts              count=10  elapsed=274.788µs number=10  hash=b3074f…dde93e size=40.00B  ignored=0
+INFO [03-24|23:53:13] Imported new block headers               count=192 elapsed=23.711ms  number=384 hash=373546…d9ea37 ignored=0
+INFO [03-24|23:53:13] Imported new state entries               count=206 elapsed=3.763µs   processed=206 pending=3297 retry=0 duplicate=0 unexpected=0
+INFO [03-24|23:53:14] Imported new state entries               count=212 elapsed=3.383µs   processed=418 pending=6689 retry=0 duplicate=0 unexpected=0
+INFO [03-24|23:53:14] Imported new state entries               count=384 elapsed=3.736µs   processed=802 pending=10092 retry=0 duplicate=0 unexpected=0
+INFO [03-24|23:53:15] Imported new state entries               count=768 elapsed=1.379ms   processed=1570 pending=9873  retry=0 duplicate=0 unexpected=0
+INFO [03-24|23:53:16] Imported new state entries               count=768 elapsed=1.625ms   processed=2338 pending=9514  retry=0 duplicate=0 unexpected=0
+INFO [03-24|23:53:17] Imported new state entries               count=768 elapsed=1.704ms   processed=3106 pending=9264  retry=0 duplicate=0 unexpected=0
+INFO [03-24|23:53:18] Imported new state entries               count=768 elapsed=2.025ms   processed=3874 pending=8969  retry=0 duplicate=0 unexpected=0
+INFO [03-24|23:53:18] Imported new block receipts              count=3   elapsed=2.576ms   number=13  hash=f9ff47…e4912b size=8.15kB  ignored=0
+INFO [03-24|23:53:18] Imported new state entries               count=242 elapsed=3.359µs   processed=4116 pending=12841 retry=0 duplicate=0 unexpected=0
+INFO [03-24|23:53:19] Imported new block receipts              count=3   elapsed=952.198µs number=16  hash=9da848…2d5285 size=1.50kB  ignored=0
+INFO [03-24|23:53:19] Imported new block headers               count=576 elapsed=65.711ms  number=960 hash=607a46…e26b6f ignored=0
+INFO [03-24|23:53:19] Imported new state entries               count=768 elapsed=1.604ms   processed=4884 pending=12468 retry=0 duplicate=0 unexpected=0
+INFO [03-24|23:53:20] Imported new state entries               count=768 elapsed=2.032ms   processed=5652 pending=12170 retry=0 duplicate=0 unexpected=0
+INFO [03-24|23:53:21] Imported new state entries               count=768 elapsed=1.202ms   processed=6420 pending=12762 retry=0 duplicate=0 unexpected=0
+INFO [03-24|23:53:23] Imported new state entries               count=1536 elapsed=5.944ms   processed=7956 pending=11589 retry=0 duplicate=0 unexpected=0
+INFO [03-24|23:53:24] Imported new state entries               count=768  elapsed=1.679ms   processed=8724 pending=11311 retry=0 duplicate=0 unexpected=0
+INFO [03-24|23:53:25] Imported new state entries               count=768  elapsed=2.288ms   processed=9492 pending=10880 retry=0 duplicate=0 unexpected=0
+INFO [03-24|23:53:25] Imported new state entries               count=638  elapsed=1.444ms   processed=10130 pending=11923 retry=0 duplicate=0 unexpected=0
+INFO [03-24|23:53:26] Imported new block receipts              count=271  elapsed=2.663ms   number=287 hash=49ba4c…2df514 size=9.52kB  ignored=0
+INFO [03-24|23:53:26] Imported new block headers               count=192  elapsed=25.022ms  number=1152 hash=4ec42f…556803 ignored=0
+INFO [03-24|23:53:26] Imported new state entries               count=768  elapsed=2.047ms   processed=10898 pending=11646 retry=0 duplicate=0 unexpected=0
+INFO [03-24|23:53:28] Imported new state entries               count=768  elapsed=2.308ms   processed=11666 pending=11314 retry=0 duplicate=0 unexpected=0
+INFO [03-24|23:53:29] Imported new state entries               count=768  elapsed=2.103ms   processed=12434 pending=10929 retry=0 duplicate=0 unexpected=0
+INFO [03-24|23:53:30] Imported new state entries               count=673  elapsed=12.627ms  processed=13107 pending=11566 retry=0 duplicate=0 unexpected=0
+INFO [03-24|23:53:30] Imported new block receipts              count=304  elapsed=15.085ms  number=591  hash=b977d6…2d0615 size=10.30kB ignored=0
+INFO [03-24|23:53:30] Imported new block headers               count=192  elapsed=48.609ms  number=1344 hash=d2e082…8e72e9 ignored=0
+INFO [03-24|23:53:30] Imported new block receipts              count=575  elapsed=9.188ms   number=1166 hash=affffe…1b2ed3 size=10.33kB ignored=0
+INFO [03-24|23:53:30] Imported new block headers               count=192  elapsed=35.243ms  number=1536 hash=c3d6bd…2ba848 ignored=0
+INFO [03-24|23:53:31] Imported new state entries               count=768  elapsed=2.816ms   processed=13875 pending=11187 retry=0 duplicate=0 unexpected=0
+INFO [03-24|23:53:32] Imported new state entries               count=768  elapsed=1.538ms   processed=14643 pending=12251 retry=0 duplicate=0 unexpected=0
+INFO [03-24|23:53:33] Imported new state entries               count=1232 elapsed=3.613ms   processed=15875 pending=11833 retry=0 duplicate=0 unexpected=0
+INFO [03-24|23:53:34] Imported new block receipts              count=13   elapsed=228.878µs number=1179 hash=dcc825…b614ed size=1.12kB  ignored=0
+INFO [03-24|23:53:34] Imported new state entries               count=768  elapsed=2.453ms   processed=16643 pending=11392 retry=0 duplicate=0 unexpected=0
+INFO [03-24|23:53:36] Imported new state entries               count=768  elapsed=2.525ms   processed=17411 pending=11118 retry=0 duplicate=0 unexpected=0
+INFO [03-24|23:53:38] Imported new state entries               count=835  elapsed=4.981ms   processed=18246 pending=11397 retry=0 duplicate=0 unexpected=0
+INFO [03-24|23:53:38] Imported new block receipts              count=199  elapsed=2.093ms   number=1378 hash=6c5553…84e660 size=8.82kB  ignored=0
+INFO [03-24|23:53:38] Imported new block headers               count=384  elapsed=49.774ms  number=1920 hash=546f66…d2b129 ignored=0
+INFO [03-24|23:53:38] Imported new state entries               count=745  elapsed=2.129ms   processed=18991 pending=11338 retry=0 duplicate=0 unexpected=0
+INFO [03-24|23:53:39] Imported new state entries               count=768  elapsed=1.897ms   processed=19759 pending=10986 retry=0 duplicate=0 unexpected=0
+INFO [03-24|23:53:40] Imported new block headers               count=192  elapsed=27.240ms  number=2112 hash=8eb441…0e61b5 ignored=0
+INFO [03-24|23:53:40] Imported new state entries               count=768  elapsed=2.187ms   processed=20527 pending=11574 retry=0 duplicate=0 unexpected=0
+INFO [03-24|23:53:41] Imported new block receipts              count=174  elapsed=1.593ms   number=1552 hash=e48401…2a4f31 size=4.44kB  ignored=0
+INFO [03-24|23:53:42] Imported new state entries               count=768  elapsed=2.568ms   processed=21295 pending=11479 retry=0 duplicate=0 unexpected=0
+INFO [03-24|23:53:43] Imported new state entries               count=768  elapsed=2.686ms   processed=22063 pending=11056 retry=0 duplicate=0 unexpected=0
+INFO [03-24|23:53:43] Imported new state entries               count=727  elapsed=3.887ms   processed=22790 pending=10530 retry=363 duplicate=0 unexpected=0
+INFO [03-24|23:53:44] Imported new state entries               count=384  elapsed=1.155ms   processed=23174 pending=11874 retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:53:44] Imported new block headers               count=384  elapsed=51.597ms  number=2496 hash=be7e32…1ba627 ignored=0
+INFO [03-24|23:53:44] Imported new block receipts              count=371  elapsed=4.048ms   number=1923 hash=9caece…dc0feb size=8.97kB  ignored=0
+INFO [03-24|23:53:44] Imported new state entries               count=768  elapsed=2.258ms   processed=23942 pending=11657 retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:53:45] Imported new state entries               count=405  elapsed=1.168ms   processed=24347 pending=11747 retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:53:45] Imported new block receipts              count=215  elapsed=2.736ms   number=2138 hash=130ed8…8deaf5 size=3.54kB  ignored=0
+INFO [03-24|23:53:45] Imported new block headers               count=192  elapsed=26.984ms  number=2688 hash=d8d55d…9c232d ignored=0
+INFO [03-24|23:53:46] Imported new state entries               count=1167 elapsed=3.863ms   processed=25514 pending=11271 retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:53:46] Imported new block receipts              count=98   elapsed=744.902µs number=2236 hash=882e9f…96d704 size=1.46kB  ignored=0
+INFO [03-24|23:53:47] Imported new state entries               count=768  elapsed=2.837ms   processed=26282 pending=10913 retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:53:48] Imported new state entries               count=776  elapsed=3.178ms   processed=27058 pending=10501 retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:53:49] Imported new state entries               count=773  elapsed=2.328ms   processed=27831 pending=11006 retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:53:50] Imported new state entries               count=768  elapsed=2.703ms   processed=28599 pending=10737 retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:53:51] Imported new state entries               count=770  elapsed=2.408ms   processed=29369 pending=10743 retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:53:52] Imported new state entries               count=768  elapsed=2.654ms   processed=30137 pending=10355 retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:53:53] Imported new state entries               count=768  elapsed=1.637ms   processed=30905 pending=13513 retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:53:54] Imported new state entries               count=776  elapsed=2.640ms   processed=31681 pending=13282 retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:53:55] Imported new state entries               count=784  elapsed=2.806ms   processed=32465 pending=13835 retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:53:55] Imported new block receipts              count=452  elapsed=7.244ms   number=2688 hash=d8d55d…9c232d size=11.97kB ignored=0
+INFO [03-24|23:53:55] Imported new block headers               count=1536 elapsed=185.725ms number=4224 hash=b25d17…268361 ignored=0
+INFO [03-24|23:53:55] Imported new block headers               count=192  elapsed=34.497ms  number=4416 hash=477b2d…8944fa ignored=0
+INFO [03-24|23:53:56] Imported new state entries               count=1152 elapsed=5.097ms   processed=33617 pending=13170 retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:53:57] Imported new state entries               count=867  elapsed=3.067ms   processed=34484 pending=13026 retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:53:58] Imported new state entries               count=507  elapsed=2.687ms   processed=34991 pending=12783 retry=102 duplicate=0 unexpected=0
+INFO [03-24|23:53:59] Imported new state entries               count=768  elapsed=3.337ms   processed=35759 pending=12520 retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:53:59] Imported new state entries               count=900  elapsed=3.557ms   processed=36659 pending=12157 retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:00] Imported new state entries               count=902  elapsed=3.626ms   processed=37561 pending=11826 retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:01] Imported new state entries               count=676  elapsed=2.848ms   processed=38237 pending=11536 retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:01] Imported new block receipts              count=1728 elapsed=25.425ms  number=4416 hash=477b2d…8944fa size=110.08kB ignored=0
+INFO [03-24|23:54:01] Imported new block headers               count=1152 elapsed=163.506ms number=5568 hash=864c2b…533629 ignored=0
+INFO [03-24|23:54:01] Imported new block receipts              count=9    elapsed=182.227µs number=4425 hash=01c0d4…1ee963 size=36.00B   ignored=0
+INFO [03-24|23:54:02] Imported new block headers               count=192  elapsed=27.018ms  number=5760 hash=0bb910…d68666 ignored=0
+INFO [03-24|23:54:02] Imported new state entries               count=848  elapsed=3.277ms   processed=39085 pending=11161 retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:03] Imported new state entries               count=768  elapsed=2.934ms   processed=39853 pending=10814 retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:03] Imported new block receipts              count=22   elapsed=420.12µs  number=4447 hash=539209…d86fa1 size=3.30kB   ignored=0
+INFO [03-24|23:54:03] Imported new state entries               count=453  elapsed=1.672ms   processed=40306 pending=10836 retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:05] Imported new state entries               count=1198 elapsed=3.309ms   processed=41504 pending=10344 retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:06] Imported new state entries               count=798  elapsed=5.362ms   processed=42302 pending=10282 retry=21  duplicate=0 unexpected=0
+INFO [03-24|23:54:07] Imported new state entries               count=768  elapsed=2.913ms   processed=43070 pending=10185 retry=327 duplicate=0 unexpected=0
+INFO [03-24|23:54:08] Imported new state entries               count=768  elapsed=3.025ms   processed=43838 pending=9968  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:08] Imported new state entries               count=384  elapsed=1.756ms   processed=44222 pending=9878  retry=2   duplicate=0 unexpected=0
+INFO [03-24|23:54:09] Imported new state entries               count=632  elapsed=3.421ms   processed=44854 pending=9539  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:09] Imported new block receipts              count=1123 elapsed=7.749ms   number=5570 hash=02194f…fe3a42 size=51.35kB  ignored=0
+INFO [03-24|23:54:09] Imported new block receipts              count=190  elapsed=9.829ms   number=5760 hash=0bb910…d68666 size=32.66kB  ignored=0
+INFO [03-24|23:54:10] Imported new block headers               count=2048 elapsed=336.580ms number=7808 hash=af1bed…569a4e ignored=0
+INFO [03-24|23:54:10] Imported new block headers               count=64   elapsed=10.015ms  number=7872 hash=ad26ca…cc7ec6 ignored=0
+INFO [03-24|23:54:10] Imported new state entries               count=1153 elapsed=4.216ms   processed=46007 pending=10070 retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:11] Imported new block receipts              count=1    elapsed=176.304µs number=5761 hash=a6e9b3…4038f7 size=540.00B  ignored=0
+INFO [03-24|23:54:11] Imported new block headers               count=192  elapsed=28.915ms  number=8064 hash=ecd382…49a917 ignored=0
+INFO [03-24|23:54:11] Imported new state entries               count=769  elapsed=2.998ms   processed=46776 pending=9808  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:12] Imported new block headers               count=192  elapsed=26.295ms  number=8256 hash=f497d8…3cf437 ignored=0
+INFO [03-24|23:54:12] Imported new block receipts              count=78   elapsed=2.052ms   number=5839 hash=bd0ded…084b2c size=12.42kB  ignored=0
+INFO [03-24|23:54:12] Imported new state entries               count=967  elapsed=5.100ms   processed=47743 pending=9736  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:12] Imported new block receipts              count=56   elapsed=855.033µs number=5895 hash=33430e…db0703 size=8.26kB   ignored=0
+INFO [03-24|23:54:12] Imported new block headers               count=192  elapsed=25.697ms  number=8448 hash=745b98…61e69a ignored=0
+INFO [03-24|23:54:13] Imported new state entries               count=770  elapsed=3.317ms   processed=48513 pending=9419  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:14] Imported new state entries               count=384  elapsed=1.360ms   processed=48897 pending=9870  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:15] Imported new state entries               count=770  elapsed=4.939ms   processed=49667 pending=9549  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:16] Imported new state entries               count=768  elapsed=3.218ms   processed=50435 pending=9211  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:17] Imported new state entries               count=770  elapsed=4.170ms   processed=51205 pending=10618 retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:18] Imported new state entries               count=769  elapsed=2.757ms   processed=51974 pending=10199 retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:19] Imported new state entries               count=770  elapsed=3.456ms   processed=52744 pending=9906  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:19] Imported new state entries               count=1006 elapsed=4.391ms   processed=53750 pending=9515  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:20] Imported new block receipts              count=611  elapsed=12.074ms  number=6506 hash=63f0a7…681759 size=114.00kB ignored=0
+INFO [03-24|23:54:20] Imported new block receipts              count=1942 elapsed=25.884ms  number=8448 hash=745b98…61e69a size=351.53kB ignored=0
+INFO [03-24|23:54:20] Imported new block headers               count=1344 elapsed=210.532ms number=9792 hash=9b0877…f06c22 ignored=0
+INFO [03-24|23:54:20] Imported new block headers               count=192  elapsed=36.914ms  number=9984 hash=1b76c7…ca3aad ignored=0
+INFO [03-24|23:54:20] Imported new state entries               count=772  elapsed=3.301ms   processed=54522 pending=9227  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:21] Imported new state entries               count=773  elapsed=3.553ms   processed=55295 pending=9277  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:21] Imported new block receipts              count=788  elapsed=7.850ms   number=9236 hash=078f65…312241 size=110.08kB ignored=0
+INFO [03-24|23:54:22] Imported new state entries               count=772  elapsed=2.655ms   processed=56067 pending=9563  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:23] Imported new state entries               count=768  elapsed=1.644ms   processed=56835 pending=10703 retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:25] Imported new state entries               count=2306 elapsed=8.589ms   processed=59141 pending=9020  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:25] Imported new state entries               count=769  elapsed=2.827ms   processed=59910 pending=9510  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:26] Imported new state entries               count=769  elapsed=3.765ms   processed=60679 pending=9145  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:27] Imported new state entries               count=768  elapsed=3.339ms   processed=61447 pending=9408  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:28] Imported new state entries               count=768  elapsed=2.997ms   processed=62215 pending=9073  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:29] Imported new state entries               count=770  elapsed=3.024ms   processed=62985 pending=8832  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:29] Imported new state entries               count=384  elapsed=1.392ms   processed=63369 pending=9714  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:30] Imported new state entries               count=958  elapsed=4.121ms   processed=64327 pending=9190  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:31] Imported new state entries               count=768  elapsed=6.939ms   processed=65095 pending=8927  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:31] Imported new block headers               count=1920 elapsed=234.600ms number=11904 hash=6dfede…4080c4 ignored=0
+INFO [03-24|23:54:31] Imported new block headers               count=192  elapsed=26.624ms  number=12096 hash=da8539…8a15ca ignored=0
+INFO [03-24|23:54:32] Imported new state entries               count=768  elapsed=3.630ms   processed=65863 pending=8563  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:35] Imported new state entries               count=768  elapsed=2.556ms   processed=66631 pending=9987  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:37] Imported new state entries               count=1280 elapsed=8.460ms   processed=67911 pending=9221  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:37] Imported new block headers               count=192  elapsed=30.695ms  number=12288 hash=4802e8…6bcda4 ignored=0
+INFO [03-24|23:54:38] Imported new state entries               count=768  elapsed=3.576ms   processed=68679 pending=8849  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:39] Imported new state entries               count=862  elapsed=3.571ms   processed=69541 pending=8683  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:40] Imported new state entries               count=1152 elapsed=7.991ms   processed=70693 pending=8794  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:43] Imported new state entries               count=1244 elapsed=4.864ms   processed=71937 pending=9145  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:45] Imported new state entries               count=1152 elapsed=9.466ms   processed=73089 pending=8551  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:46] Imported new state entries               count=768  elapsed=2.471ms   processed=73857 pending=8535  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:47] Imported new state entries               count=768  elapsed=3.835ms   processed=74625 pending=9448  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:48] Imported new state entries               count=1152 elapsed=4.689ms   processed=75777 pending=8979  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:49] Imported new block headers               count=576  elapsed=72.977ms  number=12864 hash=e3a565…5f5bee ignored=0
+INFO [03-24|23:54:49] Imported new state entries               count=875  elapsed=6.555ms   processed=76652 pending=8635  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:50] Imported new state entries               count=768  elapsed=6.404ms   processed=77420 pending=8209  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:51] Imported new state entries               count=882  elapsed=3.888ms   processed=78302 pending=8811  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:52] Imported new block receipts              count=13   elapsed=599.742µs number=9249  hash=a51192…93958b size=2.20kB   ignored=0
+INFO [03-24|23:54:52] Imported new block headers               count=192  elapsed=38.415ms  number=13056 hash=db1819…129337 ignored=0
+INFO [03-24|23:54:52] Imported new state entries               count=768  elapsed=3.638ms   processed=79070 pending=8417  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:53] Imported new state entries               count=768  elapsed=3.487ms   processed=79838 pending=8168  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:54] Imported new state entries               count=768  elapsed=3.468ms   processed=80606 pending=8494  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:55] Imported new state entries               count=887  elapsed=3.178ms   processed=81493 pending=9001  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:55] Imported new block receipts              count=6    elapsed=383.128µs number=9255  hash=b72857…808e43 size=1.63kB   ignored=0
+INFO [03-24|23:54:55] Imported new block headers               count=192  elapsed=27.902ms  number=13248 hash=a8bceb…157a67 ignored=0
+INFO [03-24|23:54:58] Imported new state entries               count=1920 elapsed=12.538ms  processed=83413 pending=7880  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:54:59] Imported new state entries               count=768  elapsed=7.864ms   processed=84181 pending=9512  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:55:00] Imported new block receipts              count=4    elapsed=1.988ms   number=9259  hash=f8aab7…c52848 size=1.62kB   ignored=0
+INFO [03-24|23:55:00] Imported new block headers               count=192  elapsed=46.823ms  number=13440 hash=c92358…ee0361 ignored=0
+INFO [03-24|23:55:00] Imported new state entries               count=890  elapsed=9.405ms   processed=85071 pending=9055  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:55:01] Imported new state entries               count=768  elapsed=4.544ms   processed=85839 pending=8833  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:55:02] Imported new state entries               count=768  elapsed=3.246ms   processed=86607 pending=8625  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:55:03] Imported new state entries               count=768  elapsed=4.547ms   processed=87375 pending=8163  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:55:04] Imported new state entries               count=768  elapsed=4.055ms   processed=88143 pending=7778  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:55:05] Imported new state entries               count=384  elapsed=2.362ms   processed=88527 pending=8970  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:55:06] Imported new state entries               count=768  elapsed=1.596ms   processed=89295 pending=11187 retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:55:07] Imported new block headers               count=192  elapsed=29.146ms  number=13632 hash=6aeb32…259e44 ignored=0
+INFO [03-24|23:55:08] Imported new block receipts              count=3    elapsed=478.774µs number=9262  hash=563918…040eeb size=3.42kB   ignored=0
+INFO [03-24|23:55:08] Imported new state entries               count=2040 elapsed=8.452ms   processed=91335 pending=9882  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:55:10] Imported new state entries               count=1653 elapsed=8.164ms   processed=92988 pending=8734  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:55:11] Imported new block receipts              count=4    elapsed=790.895µs number=9266  hash=b20d27…f48e4a size=3.95kB   ignored=0
+INFO [03-24|23:55:11] Imported new block headers               count=192  elapsed=29.034ms  number=13824 hash=cbf27e…5de7ad ignored=0
+INFO [03-24|23:55:12] Imported new state entries               count=768  elapsed=4.837ms   processed=93756 pending=8521  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:55:12] Imported new state entries               count=768  elapsed=8.325ms   processed=94524 pending=8150  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:55:14] Imported new state entries               count=893  elapsed=6.620ms   processed=95417 pending=7619  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:55:14] Imported new block headers               count=192  elapsed=51.008ms  number=14016 hash=235b2f…60c149 ignored=0
+INFO [03-24|23:55:14] Imported new block receipts              count=3    elapsed=477.832µs number=9269  hash=7e501d…1aa705 size=3.42kB   ignored=0
+INFO [03-24|23:55:15] Imported new state entries               count=384  elapsed=3.000ms   processed=95801 pending=9022  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:55:16] Imported new state entries               count=768  elapsed=4.700ms   processed=96569 pending=8721  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:55:17] Imported new state entries               count=905  elapsed=6.130ms   processed=97474 pending=8377  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:55:17] Imported new block receipts              count=6    elapsed=562.038µs number=9275  hash=81417a…1e7102 size=1.10kB   ignored=0
+INFO [03-24|23:55:17] Imported new block headers               count=192  elapsed=30.795ms  number=14208 hash=61fd57…db8827 ignored=0
+INFO [03-24|23:55:18] Imported new state entries               count=768  elapsed=4.022ms   processed=98242 pending=8035  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:55:18] Imported new state entries               count=384  elapsed=5.474ms   processed=98626 pending=7875  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:55:20] Imported new state entries               count=908  elapsed=5.063ms   processed=99534 pending=7469  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:55:21] Imported new state entries               count=384  elapsed=1.746ms   processed=99918 pending=8077  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:55:22] Imported new state entries               count=768  elapsed=6.013ms   processed=100686 pending=7781  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:55:23] Imported new state entries               count=904  elapsed=4.209ms   processed=101590 pending=7850  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:55:24] Imported new state entries               count=768  elapsed=5.296ms   processed=102358 pending=8349  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:55:25] Imported new state entries               count=900  elapsed=3.808ms   processed=103258 pending=7915  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:55:26] Imported new state entries               count=768  elapsed=3.286ms   processed=104026 pending=7542  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:55:28] Imported new state entries               count=768  elapsed=6.099ms   processed=104794 pending=10794 retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:55:29] Imported new state entries               count=768  elapsed=3.070ms   processed=105562 pending=10698 retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:55:34] Imported new state entries               count=927  elapsed=8.427ms   processed=106489 pending=10152 retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:55:35] Imported new block receipts              count=777  elapsed=11.716ms  number=10052 hash=49a9ae…70b126 size=139.24kB ignored=0
+INFO [03-24|23:55:35] Imported new state entries               count=768  elapsed=4.342ms   processed=107257 pending=10085 retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:55:36] Imported new state entries               count=513  elapsed=2.511ms   processed=107770 pending=12196 retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:55:37] Imported new block headers               count=960  elapsed=167.642ms number=15168 hash=8ec0b3…59d684 ignored=0
+INFO [03-24|23:55:37] Imported new block receipts              count=21   elapsed=613.236µs number=10073 hash=1ed31b…562010 size=1.16kB   ignored=0
+INFO [03-24|23:55:40] Imported new state entries               count=1920 elapsed=8.467ms   processed=109690 pending=11234 retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:55:43] Imported new state entries               count=1920 elapsed=23.785ms  processed=111610 pending=10081 retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:55:44] Imported new state entries               count=1152 elapsed=4.684ms   processed=112762 pending=9372  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:55:45] Imported new block headers               count=192  elapsed=41.802ms  number=15360 hash=cd6c73…b7d1f7 ignored=0
+INFO [03-24|23:55:46] Imported new state entries               count=898  elapsed=7.065ms   processed=113660 pending=8902  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:55:46] Imported new block receipts              count=20   elapsed=1.917ms   number=10093 hash=952728…ec92ff size=2.22kB   ignored=0
+INFO [03-24|23:55:47] Imported new state entries               count=768  elapsed=3.706ms   processed=114428 pending=8520  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:55:48] Imported new state entries               count=768  elapsed=3.988ms   processed=115196 pending=8279  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:55:49] Imported new state entries               count=768  elapsed=4.937ms   processed=115964 pending=7878  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:55:50] Imported new state entries               count=768  elapsed=30.398ms  processed=116732 pending=7504  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:55:51] Imported new state entries               count=768  elapsed=4.206ms   processed=117500 pending=7110  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:55:51] Imported new block receipts              count=5    elapsed=644.109µs number=10098 hash=629502…89b609 size=2.15kB   ignored=0
+INFO [03-24|23:55:51] Imported new block headers               count=192  elapsed=35.243ms  number=15552 hash=e9ef14…8938dd ignored=0
+INFO [03-24|23:55:52] Imported new state entries               count=897  elapsed=4.138ms   processed=118397 pending=7118  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:55:53] Imported new state entries               count=768  elapsed=3.692ms   processed=119165 pending=6918  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:55:54] Imported new state entries               count=1152 elapsed=4.926ms   processed=120317 pending=6799  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:55:55] Imported new state entries               count=768  elapsed=2.981ms   processed=121085 pending=7531  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:55:57] Imported new block receipts              count=28   elapsed=2.143ms   number=10126 hash=cfbf77…7f323e size=2.27kB   ignored=0
+INFO [03-24|23:55:57] Imported new state entries               count=905  elapsed=5.397ms   processed=121990 pending=7052  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:55:57] Imported new block headers               count=192  elapsed=29.948ms  number=15744 hash=122249…c37ecf ignored=0
+INFO [03-24|23:55:58] Imported new state entries               count=768  elapsed=4.093ms   processed=122758 pending=6703  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:55:59] Imported new state entries               count=768  elapsed=5.405ms   processed=123526 pending=7397  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:56:00] Imported new state entries               count=768  elapsed=4.533ms   processed=124294 pending=7056  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:56:00] Imported new block headers               count=192  elapsed=27.386ms  number=15936 hash=9437b5…93348c ignored=0
+INFO [03-24|23:56:00] Imported new block receipts              count=12   elapsed=514.556µs number=10138 hash=239872…49adf3 size=1.79kB   ignored=0
+INFO [03-24|23:56:00] Imported new state entries               count=913  elapsed=4.778ms   processed=125207 pending=6629  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:56:01] Imported new state entries               count=384  elapsed=1.834ms   processed=125591 pending=7378  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:56:02] Imported new state entries               count=768  elapsed=2.255ms   processed=126359 pending=7999  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:56:03] Imported new block receipts              count=19   elapsed=664.46µs  number=10157 hash=f387c7…2885b4 size=1.69kB   ignored=0
+INFO [03-24|23:56:03] Imported new block headers               count=192  elapsed=36.202ms  number=16128 hash=497c12…cc5e06 ignored=0
+INFO [03-24|23:56:04] Imported new state entries               count=1306 elapsed=5.997ms   processed=127665 pending=7078  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:56:04] Imported new state entries               count=768  elapsed=3.524ms   processed=128433 pending=6714  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:56:05] Imported new state entries               count=768  elapsed=2.866ms   processed=129201 pending=7818  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:56:06] Imported new block receipts              count=8    elapsed=760.001µs number=10165 hash=2fa8d1…b2fc45 size=1.62kB   ignored=0
+INFO [03-24|23:56:06] Imported new state entries               count=930  elapsed=4.511ms   processed=130131 pending=7233  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:56:06] Imported new block headers               count=192  elapsed=30.914ms  number=16320 hash=880a7d…a31230 ignored=0
+INFO [03-24|23:56:08] Imported new state entries               count=768  elapsed=3.348ms   processed=130899 pending=7008  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:56:09] Imported new state entries               count=768  elapsed=4.042ms   processed=131667 pending=6735  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:56:09] Imported new state entries               count=768  elapsed=3.822ms   processed=132435 pending=6368  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:56:10] Imported new state entries               count=768  elapsed=3.618ms   processed=133203 pending=6621  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:56:11] Imported new state entries               count=554  elapsed=2.395ms   processed=133757 pending=6484  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:56:11] Imported new block receipts              count=16   elapsed=1.000ms   number=10181 hash=01a3f6…da3d17 size=1.68kB   ignored=0
+INFO [03-24|23:56:11] Imported new block headers               count=192  elapsed=26.394ms  number=16512 hash=2eed34…03dea3 ignored=0
+INFO [03-24|23:56:12] Imported new state entries               count=768  elapsed=3.148ms   processed=134525 pending=7122  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:56:13] Imported new state entries               count=768  elapsed=3.796ms   processed=135293 pending=6909  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:56:14] Imported new state entries               count=768  elapsed=3.633ms   processed=136061 pending=6460  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:56:15] Imported new block headers               count=192  elapsed=27.326ms  number=16704 hash=fd73f8…1e368e ignored=0
+INFO [03-24|23:56:15] Imported new state entries               count=927  elapsed=4.750ms   processed=136988 pending=6656  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:56:16] Imported new state entries               count=768  elapsed=3.441ms   processed=137756 pending=6496  retry=0   duplicate=0 unexpected=0
+INFO [03-24|23:56:16] HTTP endpoint closed                     url=http://127.0.0.1:8545
+INFO [03-24|23:56:16] IPC endpoint closed                      endpoint=/Users/pushkarajjoshi/Library/Ethereum/testnet/geth.ipc
+INFO [03-24|23:56:16] Blockchain manager stopped 
+INFO [03-24|23:56:16] Stopping Ethereum protocol 
+INFO [03-24|23:56:16] Ethereum protocol stopped 
+INFO [03-24|23:56:16] Transaction pool stopped 
+INFO [03-24|23:56:16] Database closed                          database=/Users/pushkarajjoshi/Library/Ethereum/testnet/geth/chaindata
+INFO [03-24|23:58:14] Maximum peer count                       ETH=25 LES=0 total=25
+INFO [03-24|23:58:14] Starting peer-to-peer node               instance=Geth/v1.8.2-stable/darwin-amd64/go1.10
+INFO [03-24|23:58:14] Allocated cache and file handles         database=/Users/pushkarajjoshi/Library/Ethereum/testnet/geth/chaindata cache=768 handles=128
+INFO [03-24|23:58:15] Persisted trie from memory database      nodes=355 size=65.25kB time=326.168µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [03-24|23:58:15] Initialised chain configuration          config="{ChainID: 3 Homestead: 0 DAO: <nil> DAOSupport: true EIP150: 0 EIP155: 10 EIP158: 10 Byzantium: 1700000 Constantinople: <nil> Engine: ethash}"
+INFO [03-24|23:58:15] Disk storage enabled for ethash caches   dir=/Users/pushkarajjoshi/Library/Ethereum/testnet/geth/ethash count=3
+INFO [03-24|23:58:15] Disk storage enabled for ethash DAGs     dir=/Users/pushkarajjoshi/.ethash                              count=2
+INFO [03-24|23:58:15] Initialising Ethereum protocol           versions="[63 62]" network=3
+INFO [03-24|23:58:15] Loaded most recent local header          number=16704 hash=fd73f8…1e368e td=452932005172
+INFO [03-24|23:58:15] Loaded most recent local full block      number=0     hash=419410…ca4a2d td=1048576
+INFO [03-24|23:58:15] Loaded most recent local fast block      number=10181 hash=01a3f6…da3d17 td=56117550734
+INFO [03-24|23:58:15] Upgrading chain index                    type=bloombits percentage=0
+INFO [03-24|23:58:15] Loaded local transaction journal         transactions=0 dropped=0
+INFO [03-24|23:58:15] Regenerated local transaction journal    transactions=0 accounts=0
+INFO [03-24|23:58:15] Starting P2P networking 
+INFO [03-24|23:58:16] Finished upgrading chain index           type=bloombits
+INFO [03-24|23:58:17] UDP listener up                          self=enode://985c74caea515f2b25b9104e59dd58a1836f406c905284f4a2aee52dc65bc704dc6615f21a67d82c1d28f8eb09dfda156f9bccde1e27d7c18fe16281fe1db343@[::]:30303
+INFO [03-24|23:58:17] RLPx listener up                         self=enode://985c74caea515f2b25b9104e59dd58a1836f406c905284f4a2aee52dc65bc704dc6615f21a67d82c1d28f8eb09dfda156f9bccde1e27d7c18fe16281fe1db343@[::]:30303
+INFO [03-24|23:58:17] IPC endpoint opened                      url=/Users/pushkarajjoshi/Library/Ethereum/testnet/geth.ipc
+INFO [03-24|23:58:17] HTTP endpoint opened                     url=http://127.0.0.1:8545                                   cors= vhosts=localhost
+INFO [03-24|23:58:17] Etherbase automatically configured       address=0x1585c9B358775D3253f4B5E6e9CC0A81AF2B509A
+INFO [03-24|23:58:35] HTTP endpoint closed                     url=http://127.0.0.1:8545
+INFO [03-24|23:58:35] IPC endpoint closed                      endpoint=/Users/pushkarajjoshi/Library/Ethereum/testnet/geth.ipc
+INFO [03-24|23:58:35] Blockchain manager stopped 
+INFO [03-24|23:58:35] Stopping Ethereum protocol 
+INFO [03-24|23:58:35] Ethereum protocol stopped 
+INFO [03-24|23:58:35] Transaction pool stopped 
+INFO [03-24|23:58:35] Database closed                          database=/Users/pushkarajjoshi/Library/Ethereum/testnet/geth/chaindata
+INFO [03-25|00:24:38] Maximum peer count                       ETH=25 LES=0 total=25
+INFO [03-25|00:24:38] Starting peer-to-peer node               instance=Geth/v1.8.2-stable/darwin-amd64/go1.10
+INFO [03-25|00:24:38] Allocated cache and file handles         database=/Users/pushkarajjoshi/Library/Ethereum/testnet/geth/chaindata cache=768 handles=128
+INFO [03-25|00:24:38] Persisted trie from memory database      nodes=355 size=65.25kB time=575.512µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [03-25|00:24:38] Initialised chain configuration          config="{ChainID: 3 Homestead: 0 DAO: <nil> DAOSupport: true EIP150: 0 EIP155: 10 EIP158: 10 Byzantium: 1700000 Constantinople: <nil> Engine: ethash}"
+INFO [03-25|00:24:38] Disk storage enabled for ethash caches   dir=/Users/pushkarajjoshi/Library/Ethereum/testnet/geth/ethash count=3
+INFO [03-25|00:24:38] Disk storage enabled for ethash DAGs     dir=/Users/pushkarajjoshi/.ethash                              count=2
+INFO [03-25|00:24:38] Initialising Ethereum protocol           versions="[63 62]" network=3
+INFO [03-25|00:24:38] Loaded most recent local header          number=16704 hash=fd73f8…1e368e td=452932005172
+INFO [03-25|00:24:38] Loaded most recent local full block      number=0     hash=419410…ca4a2d td=1048576
+INFO [03-25|00:24:38] Loaded most recent local fast block      number=10181 hash=01a3f6…da3d17 td=56117550734
+INFO [03-25|00:24:38] Loaded local transaction journal         transactions=0 dropped=0
+INFO [03-25|00:24:38] Regenerated local transaction journal    transactions=0 accounts=0
+INFO [03-25|00:24:38] Starting P2P networking 
+INFO [03-25|00:24:40] UDP listener up                          self=enode://985c74caea515f2b25b9104e59dd58a1836f406c905284f4a2aee52dc65bc704dc6615f21a67d82c1d28f8eb09dfda156f9bccde1e27d7c18fe16281fe1db343@[::]:30303
+INFO [03-25|00:24:40] RLPx listener up                         self=enode://985c74caea515f2b25b9104e59dd58a1836f406c905284f4a2aee52dc65bc704dc6615f21a67d82c1d28f8eb09dfda156f9bccde1e27d7c18fe16281fe1db343@[::]:30303
+INFO [03-25|00:24:40] IPC endpoint opened                      url=/Users/pushkarajjoshi/Library/Ethereum/testnet/geth.ipc
+INFO [03-25|00:24:40] HTTP endpoint opened                     url=http://127.0.0.1:8545                                   cors= vhosts=localhost
+INFO [03-25|00:24:40] Etherbase automatically configured       address=0x1585c9B358775D3253f4B5E6e9CC0A81AF2B509A
+INFO [03-25|00:24:46] HTTP endpoint closed                     url=http://127.0.0.1:8545
+INFO [03-25|00:24:46] IPC endpoint closed                      endpoint=/Users/pushkarajjoshi/Library/Ethereum/testnet/geth.ipc
+INFO [03-25|00:24:46] Blockchain manager stopped 
+INFO [03-25|00:24:46] Stopping Ethereum protocol 
+INFO [03-25|00:24:46] Ethereum protocol stopped 
+INFO [03-25|00:24:46] Transaction pool stopped 
+INFO [03-25|00:24:46] Database closed                          database=/Users/pushkarajjoshi/Library/Ethereum/testnet/geth/chaindata
