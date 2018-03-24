@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ComponentsModule } from './components/components.module';
 import { ExamplesModule } from './examples/examples.module';
+import { FlashMessageModule } from 'angular-flash-message';
 
 import { ValidateService } from './services/validate.service';
 import { AuthService } from './services/auth.service';
@@ -78,7 +79,8 @@ const appRoutes: Routes = [
         FormsModule,
         RouterModule,
         ComponentsModule,
-        ExamplesModule
+        ExamplesModule,
+        FlashMessageModule
     ],
     providers: [
       ValidateService,

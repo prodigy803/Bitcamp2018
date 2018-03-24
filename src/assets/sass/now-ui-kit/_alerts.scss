@@ -5,7 +5,11 @@
     color: $white-color;
     padding-top: .9rem;
     padding-bottom: .9rem;
-    position: relative;
+    position: fixed;
+    top: 75px;
+    z-index: 9999;
+    width: 100%;
+    text-align: center;
 
     &.alert-success{
         background-color: $success-color-alert;
