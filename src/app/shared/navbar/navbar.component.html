@@ -62,6 +62,12 @@
                     </a>
                 </li> -->
                 <li class="nav-item">
+                    <a class="nav-link" *ngIf="authService.loggedIn()" routerLinkActive="active" routerLink="/products">
+                        <i class="now-ui-icons arrows-1_cloud-download-93"></i>
+                        <p>Products</p>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" *ngIf="authService.loggedIn()" routerLinkActive="active" routerLink="/profile">
                         <i class="now-ui-icons arrows-1_cloud-download-93"></i>
                         <p>Profile</p>

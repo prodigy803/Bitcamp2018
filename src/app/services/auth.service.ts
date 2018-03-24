@@ -10,7 +10,7 @@ export class AuthService {
   constructor(private http: HttpClient) { }
 
   registerUser(user) {
-    user.username = user.username.toLowerCase();
+    user.userName = user.userName.toLowerCase();
     let headers = new HttpHeaders();
     headers = headers.append('Content-Type', 'application/json');
     return this.http.post('http://localhost:3000/users/register', user, { headers });

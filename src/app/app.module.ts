@@ -23,6 +23,7 @@ import { ProfileComponent } from './shared/profile/profile.component';
 import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
 import { RegisterComponent } from './shared/register/register.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { ProductsComponent } from './buyer/products/products.component';
 
 const appRoutes: Routes = [
     { path: '', redirectTo: 'index', pathMatch: 'full' },
@@ -31,7 +32,8 @@ const appRoutes: Routes = [
     { path: 'nucleoicons',          component: NucleoiconsComponent },
     { path: 'examples/landing',     component: LandingComponent },
     { path: 'login',                component: LoginComponent },
-    { path: 'profile',              component: ProfileComponent, canActivate: [AuthGuard] }
+    { path: 'profile',              component: ProfileComponent, canActivate: [AuthGuard] },
+    { path: 'products',             component: ProductsComponent, canActivate: [AuthGuard] }
 ];
 
 @NgModule({
@@ -41,7 +43,8 @@ const appRoutes: Routes = [
         NavbarComponent,
         ProfileComponent,
         RegisterComponent,
-        FooterComponent
+        FooterComponent,
+        ProductsComponent
     ],
     imports: [
         CommonModule,
