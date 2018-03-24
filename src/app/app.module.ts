@@ -24,6 +24,8 @@ import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.compo
 import { RegisterComponent } from './shared/register/register.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { ProductsComponent } from './buyer/products/products.component';
+import { AdminComponent } from './admin/admin.component';
+import { ApprovalComponent } from './admin/approval/approval.component';
 
 const appRoutes: Routes = [
     { path: '', redirectTo: 'index', pathMatch: 'full' },
@@ -33,7 +35,9 @@ const appRoutes: Routes = [
     { path: 'examples/landing',     component: LandingComponent },
     { path: 'login',                component: LoginComponent },
     { path: 'profile',              component: ProfileComponent, canActivate: [AuthGuard] },
-    { path: 'products',             component: ProductsComponent, canActivate: [AuthGuard] }
+    { path: 'products',             component: ProductsComponent, canActivate: [AuthGuard] },
+    { path: 'admin',              component: AdminComponent, canActivate: [AuthGuard] },
+    { path: 'approval',              component: ApprovalComponent, canActivate: [AuthGuard] }
 ];
 
 @NgModule({
@@ -44,7 +48,10 @@ const appRoutes: Routes = [
         ProfileComponent,
         RegisterComponent,
         FooterComponent,
-        ProductsComponent
+        ProductsComponent,
+        AdminComponent,
+        ApprovalComponent
+
     ],
     imports: [
         CommonModule,
