@@ -30,7 +30,7 @@ router.post('/register', (req, res, next) => {
             city = data.city;
             lon = data.longitude;
             lat = data.latitude;
-            
+
             let newUser    = new User({
 
                 fullName   : req.body.fullName,
@@ -42,16 +42,16 @@ router.post('/register', (req, res, next) => {
                 type       : req.body.type,
                 loc        : [parseFloat(lon),parseFloat(lat)],
                 country    : country,
-                state      : state,  
+                state      : state,
                 city       : city
-                
+
             });
 
             User.addUser(newUser, (err, user) => {
                 (err) ? res.json({success: false, message: 'Failed to register user'}) : res.json({success: true, message: 'User registered'});
             });
         }
-        
+
     });
 
 });
@@ -140,12 +140,12 @@ router.post('/forgetpass', (req, res, next) => {
                 return res.json({ success: false, msg: 'Email ID is Not Registered !' });
 
             }else {
-              
+
                 const salt = bcrypt.genSaltSync(10);
                 const hash = bcrypt.hashSync(random, salt);
                 user.temp_password = hash;
                 user.temp_password_time = new Date();
-                
+
 
                 user.save(function(err) {
 
@@ -160,14 +160,14 @@ router.post('/forgetpass', (req, res, next) => {
                         const mailOptions = {
 
                             from: `"${config.name}" <${config.email}>`,
-                            to: email,  
-                            subject: 'Reset Password Request ', 
+                            to: email,
+                            subject: 'Reset Password Request ',
                             html: `Hello ${user.username},<br><br>
-                            &nbsp;&nbsp;&nbsp;&nbsp; Your reset password token is <b>${random}</b>.  
+                            &nbsp;&nbsp;&nbsp;&nbsp; Your reset password token is <b>${random}</b>.
                             The token is valid for only 2 minutes.<br><br>
                             Thanks,<br>
                             BitCamp.`
-                        
+
                         };
 
                         let emailStatus = transporter.sendMail(mailOptions);
@@ -177,10 +177,10 @@ router.post('/forgetpass', (req, res, next) => {
                         }else{
                             return res.json({ success: false, msg: 'Email Not Sent' });
                         }
-                        
+
                     }
                 });
-   
+
             }
         });
 
@@ -189,12 +189,12 @@ router.post('/forgetpass', (req, res, next) => {
         User.find({email: email}, (err, user) => {
 
             if(err) {
-                 
+
                 return res.json({ success: false, msg: 'Email ID is Not Registered !' });
 
             }else {
 
-                const diff = new Date() - new Date(user.temp_password_time); 
+                const diff = new Date() - new Date(user.temp_password_time);
                 const seconds = Math.floor(diff / 1000);
                 console.log(`Seconds : ${seconds}`);
 
@@ -211,11 +211,11 @@ router.post('/forgetpass', (req, res, next) => {
                         user.save(function(err) {
 
                             if (err) {
-        
+
                                 return res.json({ success: true, msg: 'Failed to Save New Password into DB' });
-        
+
                             } else {
-                        
+
                                 return res.json({ success: true, msg: 'Password Changed Sucessfully' });
 
                             }
@@ -231,7 +231,7 @@ router.post('/forgetpass', (req, res, next) => {
 
             }
         });
-        
+
 	}
 
 });
@@ -266,7 +266,7 @@ router.post('/existUserName', (req, res, next) => {
             var msg = userName + " Already Registered ! Try Another UserName.";
             return res.json({ success: true, msg: msg });
 		}else{
-            var msg = userName + " This UserName is Valid."
+            var msg = userName + " This UserName is Valid.";
 			return res.json({ success: true, msg: msg });
 		}
 	});
@@ -340,10 +340,10 @@ router.post('/upload', ( req, res ) => {
 
 router.get("/sendotp", function(req, res, next){
     var msg91 = require("msg91")("163728AzL4L4F5595b4811", "MSGIND", "4" );
-    
+
     var mobileNo = "9892851277";
     var message = "Your OTP is 4567. Verify your mobile number using this OTP."
- 
+
     msg91.send(mobileNo, message, function(err, response){
         console.log(err);
         console.log(response);
@@ -353,7 +353,7 @@ router.get("/sendotp", function(req, res, next){
         console.log(err);
         console.log(msgCount);
     });
-    
+
 });
 
 module.exports = router;
