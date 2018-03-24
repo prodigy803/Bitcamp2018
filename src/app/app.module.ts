@@ -26,6 +26,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { ProductsComponent } from './buyer/products/products.component';
 import { AdminComponent } from './admin/admin.component';
 import { ApprovalComponent } from './admin/approval/approval.component';
+import { DeliveryComponent } from './admin/delivery/delivery.component';
 
 const appRoutes: Routes = [
     // { path: '', redirectTo: 'index', pathMatch: 'full' },
@@ -37,7 +38,8 @@ const appRoutes: Routes = [
     { path: 'profile',              component: ProfileComponent, canActivate: [AuthGuard] },
     { path: 'products',             component: ProductsComponent, canActivate: [AuthGuard] },
     { path: 'admin',              component: AdminComponent, canActivate: [AuthGuard] },
-    { path: 'approval',              component: ApprovalComponent, canActivate: [AuthGuard] }
+    { path: 'approval',              component: ApprovalComponent, canActivate: [AuthGuard] },
+    { path: 'delivery',              component: DeliveryComponent, canActivate: [AuthGuard] }
 ];
 
 @NgModule({
@@ -50,7 +52,8 @@ const appRoutes: Routes = [
         FooterComponent,
         ProductsComponent,
         AdminComponent,
-        ApprovalComponent
+        ApprovalComponent,
+        DeliveryComponent
 
     ],
     imports: [
