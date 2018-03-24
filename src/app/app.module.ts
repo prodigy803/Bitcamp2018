@@ -44,7 +44,8 @@ const appRoutes: Routes = [
     { path: 'admin',                component: AdminComponent, canActivate: [AuthGuard] },
     { path: 'seller',                component: SellerComponent, canActivate: [AuthGuard] },
     { path: 'approval',             component: ApprovalComponent, canActivate: [AuthGuard] },
-    { path: 'delivery',             component: DeliveryComponent, canActivate: [AuthGuard] }
+    { path: 'delivery',             component: DeliveryComponent, canActivate: [AuthGuard] },
+    { path: 'bc',             component: BcComponent, canActivate: [AuthGuard] }
 ];
 
 @NgModule({
