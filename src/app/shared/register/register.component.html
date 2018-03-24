@@ -52,9 +52,19 @@
           Unchecked
           </label>
           </div> -->
+          <div class="input-group form-group-no-border" [ngClass]="{'input-group-focus':focus2===true}">
+            <div class="input-group-prepend">
+                <span class="input-group-text"><i class="now-ui-icons ui-1_email-85"></i></span>
+            </div>
+            <select class="form-control" name="Type" >
+              <option value="Type" disabled ><b>Type</b></option>
+              <option value="Buyer" style="color:black;">Buyer</option>
+              <option value="Seller" style="color:black;">Seller</option>
+            </select>
                     </div>
                     <div class="footer text-center">
                       <input type="submit" class="btn btn-neutral btn-round btn-lg" value="Submit" [disabled]="!regForm.valid || submitSwitch">
+                    </div>
                     </div>
                 </form>
             </div>

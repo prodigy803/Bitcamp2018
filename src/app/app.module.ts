@@ -28,6 +28,7 @@ import { AdminComponent } from './admin/admin.component';
 import { SellerComponent } from './seller/seller.component';
 import { ApprovalComponent } from './admin/approval/approval.component';
 import { DeliveryComponent } from './admin/delivery/delivery.component';
+import { BcComponent } from './bc/bc.component';
 
 const appRoutes: Routes = [
     // { path: '', redirectTo: 'index', pathMatch: 'full' },
@@ -56,7 +57,8 @@ const appRoutes: Routes = [
         AdminComponent,
         SellerComponent,
         ApprovalComponent,
-        DeliveryComponent
+        DeliveryComponent,
+        BcComponent
 
     ],
     imports: [
