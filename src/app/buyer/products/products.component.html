@@ -65,9 +65,9 @@
                         <span class="price"> &euro; 300</span>
                       </div>
 
-                      <button class="btn btn-danger btn-neutral btn-icon btn-round pull-right" rel="tooltip" title="Remove from wishlist" data-placement="left">
-                                             <i class="now-ui-icons ui-2_favourite-28"></i>
-                                         </button>
+                      <button class="btn btn-primary btn-round pull-right" (click)="open(classic)" rel="tooltip" title="Remove from wishlist" data-placement="left">
+                          Bid
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -223,3 +223,31 @@
   </div>
   <!-- end-main-raised -->
 </div>
+
+
+<ng-template #classic let-c="close" let-d="dismiss">
+ <div class="modal-header">
+     <h5 class="modal-title text-center">Modal title</h5>
+     <button type="button" class="close" (click)="d('Cross click')">
+         <span aria-hidden="true">&times;</span>
+     </button>
+ </div>
+ <div class="modal-body">
+   <label>Enter an Amount:</label>
+   <div class="input-group" [ngClass]="{'input-group-focus':focus===true}">
+      <div class="input-group-prepend" >
+          <span class="input-group-text"><i class="fa fa-user-circle"></i></span>
+      </div>
+      <input type="text" class="form-control" placeholder="Amount.. (Rs.)" (focus)="focus=true" (blur)="focus=false" >
+    </div>
+ </div>
+ <div class="modal-footer">
+     <div class="left-side">
+         <button type="button" class="btn btn-default btn-link" (click)="c('Close click')">Never mind</button>
+     </div>
+     <div class="divider"></div>
+     <div class="right-side">
+         <button type="button" class="btn btn-danger btn-link" (click)="c('Close click')">Delete</button>
+     </div>
+ </div>
+</ng-template>
