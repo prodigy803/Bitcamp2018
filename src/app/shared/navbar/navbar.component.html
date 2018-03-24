@@ -62,6 +62,18 @@
                     </a>
                 </li> -->
                 <li class="nav-item">
+                    <a class="nav-link" *ngIf="authService.loggedIn()" routerLinkActive="active" routerLink="/checkbids">
+                        <i class="now-ui-icons arrows-1_cloud-download-93"></i>
+                        <p>Check Bids</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" *ngIf="authService.loggedIn()" routerLinkActive="active" routerLink="/bc">
+                        <i class="now-ui-icons arrows-1_cloud-download-93"></i>
+                        <p>BC</p>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" *ngIf="authService.loggedIn()" routerLinkActive="active" routerLink="/admin">
                         <i class="now-ui-icons arrows-1_cloud-download-93"></i>
                         <p>Admin</p>
