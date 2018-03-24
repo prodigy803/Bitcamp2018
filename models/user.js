@@ -60,5 +60,3 @@ module.exports.comparePassword = (candidatePassword, hash, callback) => {
             callback(null, isMatch);
         }).catch((err) => console.log('There was an error with authentication.'));
     }
-
-
