@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpEventType } from '@angular/common/http';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-seller',
@@ -14,7 +15,8 @@ export class SellerComponent implements OnInit {
   progressType = "";
 
   constructor(
-    private http: HttpClient
+    private http: HttpClient,
+    private authService: AuthService
   ) { }
 
   ngOnInit() {
@@ -68,5 +70,19 @@ export class SellerComponent implements OnInit {
       }
     });
   }
+
+  onRfpSubmit(form) {
+
+    // Register User
+    this.authService.rfpSubmit(form.value).subscribe((data: any) => {
+      if (data.success) {
+        console.log("success" + data);
+      } else {
+        console.log("error" + data);
+      }
+    });
+
+  }
+
 
 }

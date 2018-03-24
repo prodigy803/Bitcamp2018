@@ -53,4 +53,12 @@ export class AuthService {
     localStorage.clear();
   }
 
+  // Farmer
+  rfpSubmit(rfp) {
+    console.log(rfp);let headers = new HttpHeaders();
+    headers = headers.append('Content-Type', 'application/json');
+    return this.http.post('http://localhost:3000/users/register', rfp, { headers });
+  }
+
+
 }
