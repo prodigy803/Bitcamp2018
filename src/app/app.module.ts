@@ -25,6 +25,7 @@ import { RegisterComponent } from './shared/register/register.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { ProductsComponent } from './buyer/products/products.component';
 import { AdminComponent } from './admin/admin.component';
+import { SellerComponent } from './seller/seller.component';
 import { ApprovalComponent } from './admin/approval/approval.component';
 import { DeliveryComponent } from './admin/delivery/delivery.component';
 
@@ -38,6 +39,7 @@ const appRoutes: Routes = [
     { path: 'profile',              component: ProfileComponent, canActivate: [AuthGuard] },
     { path: 'products',             component: ProductsComponent, canActivate: [AuthGuard] },
     { path: 'admin',                component: AdminComponent, canActivate: [AuthGuard] },
+    { path: 'seller',                component: SellerComponent, canActivate: [AuthGuard] },
     { path: 'approval',             component: ApprovalComponent, canActivate: [AuthGuard] },
     { path: 'delivery',             component: DeliveryComponent, canActivate: [AuthGuard] }
 ];
@@ -52,6 +54,7 @@ const appRoutes: Routes = [
         FooterComponent,
         ProductsComponent,
         AdminComponent,
+        SellerComponent,
         ApprovalComponent,
         DeliveryComponent
 
