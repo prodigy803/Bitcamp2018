@@ -30,16 +30,16 @@ import { DeliveryComponent } from './admin/delivery/delivery.component';
 
 const appRoutes: Routes = [
     // { path: '', redirectTo: 'index', pathMatch: 'full' },
-    { path: '',                component: ComponentsComponent },
+    { path: '',                     component: ComponentsComponent },
     { path: 'register',             component: RegisterComponent },
     { path: 'nucleoicons',          component: NucleoiconsComponent },
     { path: 'examples/landing',     component: LandingComponent },
     { path: 'login',                component: LoginComponent },
     { path: 'profile',              component: ProfileComponent, canActivate: [AuthGuard] },
     { path: 'products',             component: ProductsComponent, canActivate: [AuthGuard] },
-    { path: 'admin',              component: AdminComponent, canActivate: [AuthGuard] },
-    { path: 'approval',              component: ApprovalComponent, canActivate: [AuthGuard] },
-    { path: 'delivery',              component: DeliveryComponent, canActivate: [AuthGuard] }
+    { path: 'admin',                component: AdminComponent, canActivate: [AuthGuard] },
+    { path: 'approval',             component: ApprovalComponent, canActivate: [AuthGuard] },
+    { path: 'delivery',             component: DeliveryComponent, canActivate: [AuthGuard] }
 ];
 
 @NgModule({

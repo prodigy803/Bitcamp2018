@@ -7,8 +7,8 @@
                 <div class="photo-container">
                     <img src="assets/img/ryan.jpg" alt="">
                 </div>
-                <h3 class="title">{{ user.name }}</h3>
-                <p class="category">Username: {{ user.username }}</p>
+                <h3 class="title">{{ user.fullName }}</h3>
+                <p class="category">Username: {{ user.userName }}</p>
                 <p class="category">Email: {{ user.email }}</p>
                 <div class="content">
                     <div class="social-description">
@@ -112,38 +112,4 @@
             </div>
         </div>
     </div>
-    <footer class="footer footer-default">
-        <div class="container">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="https://www.creative-tim.com">
-                            Creative Tim
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://presentation.creative-tim.com">
-                            About Us
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://blog.creative-tim.com">
-                            Blog
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/creativetimofficial/now-ui-kit/blob/master/LICENSE.md">
-                            MIT License
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="copyright">
-                &copy;
-                {{data | date: 'yyyy'}}, Designed by
-                <a href="http://www.invisionapp.com" target="_blank">Invision</a>. Coded by
-                <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
-            </div>
-        </div>
-    </footer>
 </div>
