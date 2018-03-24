@@ -1,0 +1,172 @@
+{
+  "contractName": "ProofOfExistence1",
+  "abi": [
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "bytecode": "0x60606040523415600e57600080fd5b603580601b6000396000f3006060604052600080fd00a165627a7a7230582039340a8c069d95cf879aa4fb92a19b08f4599a27d0418813f200d7b3079fdc1a0029",
+  "deployedBytecode": "0x6060604052600080fd00a165627a7a7230582039340a8c069d95cf879aa4fb92a19b08f4599a27d0418813f200d7b3079fdc1a0029",
+  "sourceMap": "26:86:1:-;;;57:53;;;;;;;;26:86;;;;;;",
+  "deployedSourceMap": "26:86:1:-;;;;;",
+  "source": "pragma solidity ^0.4.4;\n\n\ncontract ProofOfExistence1 {\n  function ProofOfExistence1() {\n    // constructor\n  }\n}\n",
+  "sourcePath": "/Users/pushkarajjoshi/Desktop/Bitcamp/bitcamp2018/solidity-experiments/contracts/ProofOfExistence1.sol",
+  "ast": {
+    "absolutePath": "/Users/pushkarajjoshi/Desktop/Bitcamp/bitcamp2018/solidity-experiments/contracts/ProofOfExistence1.sol",
+    "exportedSymbols": {
+      "ProofOfExistence1": [
+        63
+      ]
+    },
+    "id": 64,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 58,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".4"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 63,
+        "linearizedBaseContracts": [
+          63
+        ],
+        "name": "ProofOfExistence1",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 61,
+              "nodeType": "Block",
+              "src": "86:24:1",
+              "statements": []
+            },
+            "id": 62,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "ProofOfExistence1",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 59,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "83:2:1"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 60,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "86:0:1"
+            },
+            "scope": 63,
+            "src": "57:53:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 64,
+        "src": "26:86:1"
+      }
+    ],
+    "src": "0:113:1"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/pushkarajjoshi/Desktop/Bitcamp/bitcamp2018/solidity-experiments/contracts/ProofOfExistence1.sol",
+    "exportedSymbols": {
+      "ProofOfExistence1": [
+        63
+      ]
+    },
+    "id": 64,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 58,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".4"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 63,
+        "linearizedBaseContracts": [
+          63
+        ],
+        "name": "ProofOfExistence1",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 61,
+              "nodeType": "Block",
+              "src": "86:24:1",
+              "statements": []
+            },
+            "id": 62,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "ProofOfExistence1",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 59,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "83:2:1"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 60,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "86:0:1"
+            },
+            "scope": 63,
+            "src": "57:53:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 64,
+        "src": "26:86:1"
+      }
+    ],
+    "src": "0:113:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.19+commit.c4cbbb05.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.0",
+  "updatedAt": "2018-03-24T18:16:13.001Z"
+}
