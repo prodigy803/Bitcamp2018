@@ -47,7 +47,7 @@
           <div class="col-md-9">
             <div class="row">
               <div class="col-lg-4 col-md-6">
-                <div class="card card-product card-plain">
+                <div class="card card-product card-plain" >
                   <div class="card-image">
                     <a href="#">
                                          <img src="../assets/img/polo.jpg" alt="..."/>
@@ -57,16 +57,30 @@
                     <a href="#">
                       <h4 class="card-title">Polo Ralph Lauren</h4>
                     </a>
-                    <p class="card-description">
-                      Impeccably tailored in Italy from lightweight navy wool.
-                    </p>
-                    <div class="card-footer">
-                      <div class="price-container">
-                        <span class="price"> &euro; 300</span>
-                      </div>
 
-                      <button class="btn btn-primary btn-round pull-right" (click)="open(classic)" rel="tooltip" title="Remove from wishlist" data-placement="left">
-                          Bid
+                      <table style="font-size: 18px">
+                        <tr>&nbsp;&nbsp;&nbsp;&nbsp;;
+                          <td>Base Price</td>&nbsp;&nbsp;&nbsp;
+                          <td>Bid Price</td>
+                        </tr>
+                        <tr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <td>300</td>&nbsp;&nbsp;&nbsp;
+                          <td>{{ bid_amount }}</td>
+                        </tr>
+                      </table>
+
+                    <div class="card-footer">
+
+                      <button class="btn btn-primary btn-round pull-left" (click)="decrementBid()" rel="tooltip" title="Remove from wishlist" data-placement="left">
+                          -
+                      </button>
+
+
+                      <button class="btn btn-primary btn-round" (click)="incrementBid()" rel="tooltip" title="Remove from wishlist" data-placement="left">
+                          +
+                      </button>
+                      <button class="btn btn-primary btn-round pull-right" (click)="confirmBid()" rel="tooltip" title="Remove from wishlist" data-placement="left">
+                          BID
                       </button>
                     </div>
                   </div>

@@ -8,7 +8,8 @@ import {NgbModal, ModalDismissReasons }from '@ng-bootstrap/ng-bootstrap';
 })
 export class ProductsComponent implements OnInit {
     closeResult: string;
-
+    bid_amount = 100;
+    confirmBid = false;
   constructor(private modalService: NgbModal) { }
 
   ngOnInit() {
@@ -39,6 +40,17 @@ export class ProductsComponent implements OnInit {
         } else {
             return  `with: ${reason}`;
         }
+    }
+    confirmBid(){
+
+    }
+    incrementBid(){
+
+      this.bid_amount=Math.round(this.bid_amount+this.bid_amount*0.1);
+    }
+    decrementBid(){
+
+      this.bid_amount=Math.round(this.bid_amount-this.bid_amount*0.1);
     }
 
 }
