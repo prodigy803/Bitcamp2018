@@ -48,7 +48,8 @@ const appRoutes: Routes = [
     { path: 'approval',             component: ApprovalComponent, canActivate: [AuthGuard] },
     { path: 'delivery',             component: DeliveryComponent, canActivate: [AuthGuard] },
     { path: 'bc',             component: BcComponent, canActivate: [AuthGuard] },
-    { path: 'checkbids',             component: CheckbidsComponent, canActivate: [AuthGuard] }
+    { path: 'checkbids',             component: CheckbidsComponent, canActivate: [AuthGuard] },
+    { path: 'checkbidstatus',             component: CheckBidStatusComponent, canActivate: [AuthGuard] }
 ];
 
 @NgModule({
