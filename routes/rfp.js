@@ -30,12 +30,11 @@ router.post('/create', (req, res, next) => {
         rfpTime     : Date(),
         approveTime : "Default",
         rfpstatus   : "Submitted",
-        bidStatus   : "Submitted",
-        bidPrice    : req.body.amount
+        bidStatus   : "Submitted"
 
     });
 
-    RFP.save(newRFP, (err, saveRFP) => {
+    newRFP.save(newRFP, (err, saveRFP) => {
         if(err){
             return res.json({success: false, message: 'Failed to Register Your Product'});
         }else {
@@ -56,6 +55,33 @@ router.get('/getrfp', (req, res, next) => {
 			return res.json({success: true, message: allRFP});
         }
 	});
+});
+
+// Update Bids
+router.post('/updatebid', (req, res, next) => {
+
+    rfpId = req.body.rfpId;
+    userId = req.body.uId;
+    bidPrice = req.body.bidPrice;
+
+    RFP.findByIdAndUpdate(rfpId,
+        {$push: {bidders: {
+
+            "uId": userId,
+            "bidPrice": bidPrice,
+            "bidTime": Date()
+
+        }}},
+        {safe: true, upsert: true},
+        function(err, doc) {
+            if(err){
+                return res.json({success: false, message: 'Failed to Make Your Bid !'});
+            }else{
+                return res.json({success: true, message: 'Congrats You are the Latest Highest Bidder!'});
+            }
+        }
+    );
+
 });
 
 
