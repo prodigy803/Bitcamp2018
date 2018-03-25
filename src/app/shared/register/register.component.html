@@ -6,8 +6,6 @@
                 <form #regForm="ngForm" (ngSubmit)="onRegisterSubmit(regForm)" class="form" method="" action="">
                     <div class="header text-center">
                         <h4 class="title title-up">Sign Up</h4>
-                        <div class="alert alert-danger" *ngIf="errSwitch" role="alert">{{ errMsg }}</div>
-                        <div class="alert alert-success" *ngIf="succSwitch" role="alert">{{ succMsg }}</div>
                         <div class="social-line">
                             <a href="#pablo" class="btn btn-neutral btn-facebook btn-icon btn-round">
                                 <i class="fa fa-facebook-square"></i>
@@ -59,7 +57,7 @@
             <select class="form-control" name="type" id="type" ngModel required>
               <option value="Type" disabled ><b>Type</b></option>
               <option value="Buyer" style="color:black;">Buyer</option>
-              <option value="Seller" style="color:black;">Seller</option>
+              <option value="Farmer" style="color:black;">Farmer</option>
             </select>
                     </div>
                     <div class="footer text-center">
