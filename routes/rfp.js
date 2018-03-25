@@ -30,12 +30,11 @@ router.post('/create', (req, res, next) => {
         rfpTime     : Date(),
         approveTime : "Default",
         rfpstatus   : "Submitted",
-        bidStatus   : "Submitted",
-        bidPrice    : req.body.amount
+        bidStatus   : "Submitted"
 
     });
 
-    RFP.save(newRFP, (err, saveRFP) => {
+    newRFP.save(newRFP, (err, saveRFP) => {
         if(err){
             return res.json({success: false, message: 'Failed to Register Your Product'});
         }else {
