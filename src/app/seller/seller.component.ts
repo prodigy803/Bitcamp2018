@@ -15,7 +15,7 @@ export class SellerComponent implements OnInit {
   user: any;
   uploadProgress = 0;
   progressType = "";
-  rfp = {userId: "", proType: "", proSubType: "", proName: "", quantity: "", amount: "", fileInput: ""};
+  rfp = {userId: "", proType: "", proSubType: "", proName: "", quantity: "", amount: ""};
 
   constructor(
     private http: HttpClient,
@@ -76,9 +76,7 @@ export class SellerComponent implements OnInit {
   }
 
   onRfpSubmit(form: NgForm) {
-    console.log(form.value);
     var formData = JSON.stringify(form.value);
-    console.log(formData);
     this.rfp.userId = this.user.id;
 
     // Register User
