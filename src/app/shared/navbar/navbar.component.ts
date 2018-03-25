@@ -11,6 +11,7 @@ import { Router } from '@angular/router';
 export class NavbarComponent implements OnInit {
     private toggleButton: any;
     private sidebarVisible: boolean;
+    private userType = null;
 
     constructor(
       public location: Location,
@@ -56,6 +57,19 @@ export class NavbarComponent implements OnInit {
       this.authService.logout();
       this.router.navigateByUrl('/');
     }
+
+    getUserType(){
+      this.userType = JSON.parse(localStorage.getItem('user')).type;
+      if(this.userType == "Buyer") {
+        return "buyer";
+      } else if(this.userType == "Farmer") {
+        return "farmer";
+      } else if(this.userType == "Admin") {
+        return "admin";
+      } else {
+        return "false";
+      }
+     }
 
     isDocumentation() {
         var titlee = this.location.prepareExternalUrl(this.location.path());

@@ -62,44 +62,48 @@
                     </a>
                 </li> -->
                 <li class="nav-item">
-                    <a class="nav-link" *ngIf="authService.loggedIn()" routerLinkActive="active" routerLink="/checkbidstatus">
-                        <i class="now-ui-icons arrows-1_cloud-download-93"></i>
-                        <p>Check Bid Status</p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" *ngIf="authService.loggedIn()" routerLinkActive="active" routerLink="/checkbids">
-                        <i class="now-ui-icons arrows-1_cloud-download-93"></i>
-                        <p>Check Bids</p>
-                    </a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" *ngIf="authService.loggedIn()" routerLinkActive="active" routerLink="/bc">
                         <i class="now-ui-icons arrows-1_cloud-download-93"></i>
                         <p>BC</p>
                     </a>
                 </li>
+                <!-- Admin -->
                 <li class="nav-item">
-                    <a class="nav-link" *ngIf="authService.loggedIn()" routerLinkActive="active" routerLink="/admin">
+                    <a class="nav-link" *ngIf="authService.loggedIn() && (getUserType() == 'admin')" routerLinkActive="active" routerLink="/admin">
                         <i class="now-ui-icons arrows-1_cloud-download-93"></i>
                         <p>Admin</p>
                     </a>
                 </li>
+                <!-- Farmer -->
                 <li class="nav-item">
-                    <a class="nav-link" *ngIf="authService.loggedIn()" routerLinkActive="active" routerLink="/seller">
-                        <i class="now-ui-icons arrows-1_cloud-download-93"></i>
-                        <p>Seller</p>
+                    <a class="nav-link" *ngIf="authService.loggedIn() && (getUserType() == 'farmer')" routerLinkActive="active" routerLink="/seller">
+                        <i class="now-ui-icons shopping_tag-content"></i>
+                        <p>RFP</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" *ngIf="authService.loggedIn()" routerLinkActive="active" routerLink="/products">
-                        <i class="now-ui-icons arrows-1_cloud-download-93"></i>
+                    <a class="nav-link" *ngIf="authService.loggedIn() && (getUserType() == 'farmer')" routerLinkActive="active" routerLink="/checkbidstatus">
+                        <i class="now-ui-icons shopping_delivery-fast"></i>
+                        <p>Check Bid Status</p>
+                    </a>
+                </li>
+                <!-- Buyer -->
+                <li class="nav-item">
+                    <a class="nav-link" *ngIf="authService.loggedIn() && (getUserType() == 'buyer')" routerLinkActive="active" routerLink="/products">
+                        <i class="now-ui-icons files_paper"></i>
                         <p>Products</p>
                     </a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" *ngIf="authService.loggedIn() && (getUserType() == 'buyer')" routerLinkActive="active" routerLink="/checkbids">
+                        <i class="now-ui-icons education_paper"></i>
+                        <p>Check Bids</p>
+                    </a>
+                </li>
+                <!-- Shared Links -->
+                <li class="nav-item">
                     <a class="nav-link" *ngIf="authService.loggedIn()" routerLinkActive="active" routerLink="/profile">
-                        <i class="now-ui-icons arrows-1_cloud-download-93"></i>
+                        <i class="now-ui-icons users_circle-08"></i>
                         <p>Profile</p>
                     </a>
                 </li>
@@ -117,7 +121,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" *ngIf="authService.loggedIn()" (click)="onLogoutClick()" routerLink="">
-                        <i class="now-ui-icons arrows-1_cloud-download-93"></i>
+                        <i class="now-ui-icons sport_user-run"></i>
                         <p>Logout</p>
                     </a>
                 </li>

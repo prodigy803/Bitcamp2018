@@ -1,0 +1,22 @@
+.btm-rt {
+  position: fixed;
+  z-index: 999;
+  right: 20px;
+  bottom: 20px;
+}
+.dropdown-toggle::after {
+    display:none;
+}
+// .dropdown-menu {
+//   padding-top: 0px;
+//   padding-bottom: 0px;
+//   line-height: 0;
+// }
+.btn-crc {
+	border-radius: 50%;
+	height: 63px;
+	font-size: 28px;
+	width: 71px;
+	text-align: center;
+	padding-top: 17px;
+}

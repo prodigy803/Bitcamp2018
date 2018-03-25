@@ -1,4 +1,33 @@
 <app-navbar></app-navbar>
 <flash-message></flash-message>
 <router-outlet></router-outlet>
+
+<!-- <div class="col text-right btm-rt">
+  <div ngbDropdown placement="top-right" class="d-inline-block dropdown">
+      <button type="button" class="btn btn-info btn-just-icon btn-lg" id="dropdownBasic1" ngbDropdownToggle><i class="nc-icon nc-chat-33"></i></button>
+      <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-primary">
+        <iframe
+            width="350"
+            height="430"
+            src="https://console.dialogflow.com/api-client/demo/embedded/89480afd-64ce-45f3-8901-1b68184d73df">
+        </iframe>
+      </div>
+  </div>
+</div> -->
+<div class="col text-right btm-rt">
+  <div *ngIf="showHide">
+      <iframe
+      width="350"
+      height="430"
+      src="https://console.dialogflow.com/api-client/demo/embedded/89480afd-64ce-45f3-8901-1b68184d73df">
+    </iframe>
+  </div>
+  <!-- <button class="btn btn-outline-primary  btn-just-icon" (click)="showHide = !showHide" id="dropdownBasic1">
+    <i class="ui-1_send"></i>
+  </button> -->
+  <button type="button" class="btn btn-info btn-just-icon btn-crc" (click)="showHide = !showHide">
+    <i class="now-ui-icons ui-2_chat-round"></i>
+  </button>
+</div>
+
 <app-footer *ngIf="removeFooter()"></app-footer>
