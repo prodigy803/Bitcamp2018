@@ -59,6 +59,11 @@ export class AuthService {
     headers = headers.append('Content-Type', 'application/json');
     return this.http.post('http://localhost:3000/rfp/create', rfp, { headers });
   }
+  getRfp() {
+    let headers = new HttpHeaders();
+    headers = headers.append('Content-Type', 'application/json');
+    return this.http.get('http://localhost:3000/rfp/getrfp',  { headers });
+  }
 
 
 }

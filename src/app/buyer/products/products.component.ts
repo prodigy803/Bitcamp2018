@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {NgbModal, ModalDismissReasons }from '@ng-bootstrap/ng-bootstrap';
 
+
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
@@ -8,7 +9,9 @@ import {NgbModal, ModalDismissReasons }from '@ng-bootstrap/ng-bootstrap';
 })
 export class ProductsComponent implements OnInit {
     closeResult: string;
-    bid_amount = 100;
+    // base_price : Number;
+    bid_amount  = 100;
+
   constructor(private modalService: NgbModal) { }
 
   ngOnInit() {
