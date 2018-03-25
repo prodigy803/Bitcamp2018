@@ -4,6 +4,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CommonModule, } from '@angular/common';
+import * as FusionCharts from 'fusioncharts';
+import * as Charts from 'fusioncharts/fusioncharts.charts';
+import * as FintTheme from 'fusioncharts/themes/fusioncharts.theme.fint';
 
 
 
@@ -36,7 +39,8 @@ import { DeliveryComponent } from './admin/delivery/delivery.component';
 import { BcComponent } from './bc/bc.component';
 import { CheckbidsComponent } from './buyer/checkbids/checkbids.component';
 import { CheckBidStatusComponent } from './seller/check-bid-status/check-bid-status.component';
-
+import { FusionChartsModule } from 'angular4-fusioncharts';
+FusionChartsModule.fcRoot(FusionCharts, Charts, FintTheme);
 const appRoutes: Routes = [
     // { path: '', redirectTo: 'index', pathMatch: 'full' },
     { path: '',                     component: ComponentsComponent },
@@ -87,7 +91,8 @@ const appRoutes: Routes = [
         RouterModule,
         ComponentsModule,
         ExamplesModule,
-        FlashMessageModule
+        FlashMessageModule,
+        FusionChartsModule
     ],
     providers: [
       ValidateService,
