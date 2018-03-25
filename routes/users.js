@@ -5,8 +5,13 @@ const jwt = require('jsonwebtoken');
 const multer = require('multer');
 const path = require('path');
 const request = require('request');
-const config = require('../config/database');
+const database = require('../config/database');
 const Web3 = require('web3');
+const randomstring = require('randomstring');
+const bcrypt = require('bcryptjs');
+const nodemailer = require('nodemailer');
+const mongoose = require('mongoose');
+const config = require('../config/config');
 
 // Import Mongoose Model
 const User = require('../models/user');
@@ -70,7 +75,7 @@ router.post('/register', (req, res, next) => {
                 country    : country,
                 state      : state,
                 city       : city,
-                ethID      : ethID  
+                ethID      : ethID
 
             });
 
@@ -100,7 +105,7 @@ router.post('/authenticate', (req, res, next) => {
             if(err) return res.json({success: false, msg: 'Error In Password Validation !'});
 
             if(isMatch) {
-                const token = jwt.sign({data: user}, config.secret, {
+                const token = jwt.sign({data: user}, database.secret, {
                     expiresIn: 604800 // 1 week
                 });
 
@@ -170,11 +175,11 @@ router.post('/forgetpass', (req, res, next) => {
 
                 const salt = bcrypt.genSaltSync(10);
                 const hash = bcrypt.hashSync(random, salt);
-                user.temp_password = hash;
-                user.temp_password_time = new Date();
+                user.tPass = hash;
+                user.tPassTime = new Date();
 
-
-                user.save(function(err) {
+                
+                user.save(function(err, mail) {
 
                     if (err) {
 
@@ -189,7 +194,7 @@ router.post('/forgetpass', (req, res, next) => {
                             from: `"${config.name}" <${config.email}>`,
                             to: email,
                             subject: 'Reset Password Request ',
-                            html: `Hello ${user.username},<br><br>
+                            html: `Hello ${user.userName},<br><br>
                             &nbsp;&nbsp;&nbsp;&nbsp; Your reset password token is <b>${random}</b>.
                             The token is valid for only 2 minutes.<br><br>
                             Thanks,<br>
@@ -221,19 +226,19 @@ router.post('/forgetpass', (req, res, next) => {
 
             }else {
 
-                const diff = new Date() - new Date(user.temp_password_time);
+                const diff = new Date() - new Date(user.tPassTime);
                 const seconds = Math.floor(diff / 1000);
                 console.log(`Seconds : ${seconds}`);
 
                 if (seconds < 120) {
 
-                    if (bcrypt.compare(token, user.temp_password)) {
+                    if (bcrypt.compare(token, user.tPass)) {
 
                         const salt = bcrypt.genSaltSync(10);
                         const hash = bcrypt.hashSync(newPassword, salt);
                         user.password = hash;
-                        user.temp_password = undefined;
-                        user.temp_password_time = undefined;
+                        user.tPass = undefined;
+                        user.tPassTime = undefined;
 
                         user.save(function(err) {
 

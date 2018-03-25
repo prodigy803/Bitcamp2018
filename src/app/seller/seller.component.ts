@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpEventType } from '@angular/common/http';
 import { AuthService } from '../services/auth.service';
+import {NgForm} from '@angular/forms';
+import { FlashMessage } from 'angular-flash-message';
 
 @Component({
   selector: 'app-seller',
@@ -13,10 +15,12 @@ export class SellerComponent implements OnInit {
   user: any;
   uploadProgress = 0;
   progressType = "";
+  rfp = {userId: "", proType: "", proSubType: "", proName: "", quantity: "", amount: "", fileInput: ""};
 
   constructor(
     private http: HttpClient,
-    private authService: AuthService
+    private authService: AuthService,
+    private flashMessage: FlashMessage
   ) { }
 
   ngOnInit() {
@@ -71,14 +75,18 @@ export class SellerComponent implements OnInit {
     });
   }
 
-    onRfpSubmit(form) {
+  onRfpSubmit(form: NgForm) {
+    console.log(form.value);
+    var formData = JSON.stringify(form.value);
+    console.log(formData);
+    this.rfp.userId = this.user.id;
 
     // Register User
-    this.authService.rfpSubmit(form.value).subscribe((data: any) => {
+    this.authService.rfpSubmit(this.rfp).subscribe((data: any) => {
       if (data.success) {
-        console.log("success" + data);
+        this.flashMessage.success(data.message, {delay: 5000});
       } else {
-        console.log("error" + data);
+        this.flashMessage.success(data.message, {delay: 5000});
       }
     });
 

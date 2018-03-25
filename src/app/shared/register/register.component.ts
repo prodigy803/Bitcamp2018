@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ValidateService } from '../../services/validate.service';
 import { AuthService } from '../../services/auth.service';
+import { Router } from '@angular/router';
+import { FlashMessage } from 'angular-flash-message';
 
 @Component({
   selector: 'app-register',
@@ -9,13 +11,12 @@ import { AuthService } from '../../services/auth.service';
 })
 export class RegisterComponent implements OnInit {
 
-  errSwitch = false;
-  succSwitch = false;
-  submitSwitch = false;
-  errMsg: string;
-  succMsg: string;
-
-  constructor(private validateService: ValidateService, private authService: AuthService) { }
+  constructor(
+    private validateService: ValidateService,
+    private authService: AuthService,
+    private flashMessage: FlashMessage,
+    private router: Router
+  ) { }
 
   ngOnInit() {
       var body = document.getElementsByTagName('body')[0];
@@ -36,24 +37,17 @@ export class RegisterComponent implements OnInit {
 
     // Validate Email
     if (!this.validateService.validateEmail(form.value.email)) {
-      this.errSwitch = true;
-      this.errMsg = 'Please use a valid email';
+      this.flashMessage.danger("Please enter a Valid Email!", {delay: 5000});
       return false;
     }
 
     // Register User
     this.authService.registerUser(form.value).subscribe((data: any) => {
       if (data.success) {
-        this.succSwitch = true;
-        this.succMsg = 'You are now registered and can log in';
-        this.errSwitch = false;
-        this.errMsg = '';
-        this.submitSwitch = true;
+        this.router.navigate(['']);
+        this.flashMessage.success(data.message, {delay: 5000});
       } else {
-        this.succSwitch = false;
-        this.succMsg = '';
-        this.errSwitch = true;
-        this.errMsg = 'Something went wrong';
+        this.flashMessage.danger(data.message, {delay: 5000});
       }
     });
 

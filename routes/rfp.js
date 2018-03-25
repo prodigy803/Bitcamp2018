@@ -61,16 +61,21 @@ router.post('/create', (req, res, next) => {
         rfpTime     : Date.now(),
         approveTime : req.body.approveTime,
         rfpstatus   : req.body.rfpstatus
-        
+
     });
 
     RFP.save(newRFP, (err, saveRFP) => {
         if(err){
+            console.log(err);
             return res.json({success: false, message: 'Failed to Register Your Product'});
         }else {
-
+            console.log(saveRFP);
             rfpId = saveRFP._id;
+<<<<<<< HEAD
             
+=======
+            console.log(rfpId);
+>>>>>>> 7858b4cd37eae5acfb55fb282bb522068e6a440e
             upload(reqFile, res, (err) => {
 
                 if(err){
@@ -98,10 +103,10 @@ router.post('/create', (req, res, next) => {
                     }
                 }
             });
-        
+
             return res.json({success: true, message: 'RFP Submitted Successfully !'});
         }
-        
+
     });
 });
 
