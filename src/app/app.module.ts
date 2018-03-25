@@ -5,6 +5,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CommonModule, } from '@angular/common';
 
+
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; // this is needed!
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ComponentsModule } from './components/components.module';
@@ -69,6 +71,8 @@ const appRoutes: Routes = [
         BcComponent,
         CheckbidsComponent,
         CheckBidStatusComponent
+
+
 
     ],
     imports: [

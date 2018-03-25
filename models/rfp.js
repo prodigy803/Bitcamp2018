@@ -18,7 +18,7 @@ const rfpSchema = new Schema({
     rfpTime     : String,
     approveTime : String,
     rfpstatus   : String
-    
+
 });
 
 const rfp = mongoose.model('RFP', rfpSchema);

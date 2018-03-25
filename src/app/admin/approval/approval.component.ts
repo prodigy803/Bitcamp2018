@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-approval',
@@ -6,10 +7,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./approval.component.css']
 })
 export class ApprovalComponent implements OnInit {
+  applications: Object[];
 
-  constructor() { }
+  constructor(private authService: AuthService) { }
 
   ngOnInit() {
+    this.authService.readRfp().subscribe((rfps: any) => {
+      this.applications = rfps.msg;
+      console.log(this.applications);
+    },
+    err => {
+      console.log(err);
+      return false;
+    });
+
   }
 
 }

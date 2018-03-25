@@ -59,6 +59,8 @@ export class AuthService {
     headers = headers.append('Content-Type', 'application/json');
     return this.http.post('http://localhost:3000/rfp/create', rfp, { headers });
   }
-
+  readRfp() {
+    return this.http.get('http://localhost:3000/rfp/read', {headers: this.headers});
+  }
 
 }
