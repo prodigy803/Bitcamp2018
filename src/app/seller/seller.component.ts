@@ -71,7 +71,7 @@ export class SellerComponent implements OnInit {
     });
   }
 
-  onRfpSubmit(form) {
+    onRfpSubmit(form) {
 
     // Register User
     this.authService.rfpSubmit(form.value).subscribe((data: any) => {

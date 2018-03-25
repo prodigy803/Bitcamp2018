@@ -21,11 +21,13 @@ mongoose.connect(config.database)
 
 // Routes
 const users = require('./routes/users');
+const rfp = require('./routes/rfp');
 
 // ******************************************
 // MIDDLEWARE
 // ******************************************
 // Cross-Origin Resource Sharing (CORS)
+
 app.use(cors());
 
 // Body Parser Middleware
@@ -40,11 +42,12 @@ app.use(passport.session());
 // ROUTES
 // ******************************************
 // API calls go here
+
 app.use('/users', users);
+app.use('/rfp', rfp);
 
 // Serve static files
 app.use(express.static(`${__dirname}/public`));
-
 
 // Index Route
 app.get('/', (req, res) => {
@@ -54,6 +57,8 @@ app.get('/', (req, res) => {
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'public/index.html'));
 });
+
+
 // ******************************************
 // API ERROR HANDLER
 // ******************************************

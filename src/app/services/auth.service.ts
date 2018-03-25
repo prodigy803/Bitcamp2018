@@ -57,7 +57,7 @@ export class AuthService {
   rfpSubmit(rfp) {
     console.log(rfp);let headers = new HttpHeaders();
     headers = headers.append('Content-Type', 'application/json');
-    return this.http.post('http://localhost:3000/users/register', rfp, { headers });
+    return this.http.post('http://localhost:3000/rfp/create', rfp, { headers });
   }
 
 

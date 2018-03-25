@@ -314,7 +314,7 @@ const upload = multer({
     fileFilter: function(req, file, cb){
         checkFileType(file, cb);
     }
-}).single('pro_image');
+}).single('user_image');
 
 // Check File Type
 function checkFileType(file, cb) {
