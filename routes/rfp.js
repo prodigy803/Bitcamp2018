@@ -26,10 +26,12 @@ router.post('/create', (req, res, next) => {
         proName     : req.body.proName,
         quantity    : req.body.quantity,
         basePrice   : req.body.amount,
-        proImage    : "Default",
-        rfpTime     : Date.now(),
-        approveTime : req.body.approveTime,
-        rfpstatus   : req.body.rfpstatus
+        proImage    : req.body.proImage,
+        rfpTime     : Date(),
+        approveTime : "Default",
+        rfpstatus   : "Submitted",
+        bidStatus   : "Submitted",
+        bidPrice    : req.body.amount
 
     });
 
@@ -42,5 +44,19 @@ router.post('/create', (req, res, next) => {
 
     });
 });
+
+// Get All RFPs
+router.get('/getrfp', (req, res, next) => {
+
+    RFP.find({}, (err, allRFP) => {
+		
+		if(err){
+			return res.json({success: false, message: 'Failed to get All RFPs'});
+		}else{
+			return res.json({success: true, message: allRFP});
+        }
+	});
+});
+
 
 module.exports = router;
