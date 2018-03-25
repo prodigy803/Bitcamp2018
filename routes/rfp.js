@@ -71,11 +71,9 @@ router.post('/create', (req, res, next) => {
         }else {
             console.log(saveRFP);
             rfpId = saveRFP._id;
-<<<<<<< HEAD
-            
-=======
+
             console.log(rfpId);
->>>>>>> 7858b4cd37eae5acfb55fb282bb522068e6a440e
+
             upload(reqFile, res, (err) => {
 
                 if(err){
