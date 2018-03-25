@@ -19,7 +19,12 @@ const rfpSchema = new Schema({
     approveTime : String,
     rfpstatus   : String,
     bidStatus   : String,
-    bidPrice    : String
+    bidPrice    : String,
+    bidders     : [{
+                    uId      : String,
+                    bidPrice : String,
+                    bidTime  : String
+                  }]
     
 });
 
