@@ -33,11 +33,12 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr *ngFor="let app of applications; let i = index">
+                  <tr *ngFor="let rfp of rfps; let i = index">
 
-                    <td class="text-center">{{ app.proName }}</td>
-                    <td class="text-center">{{ app.quantity }}</td>
-                    <td class="text-center">{{ app.basePrice }}</td>
+                    <td class="text-center">{{ rfp.proName }}</td>
+                    <td class="text-center">{{ rfp.quantity }}</td>
+                    <td class="text-center">{{ rfp.basePrice }}</td>
+                    <td class="text-center">{{ rfp.bidders[].bidPrice }}</td>
                     <td class="td-actions text-center">
                       <button class="btn btn-info btn-link" placement="left" ngbTooltip="View Profile" (click)="open(content, app)">
                         <i class="nc-icon lg nc-single-02"></i>

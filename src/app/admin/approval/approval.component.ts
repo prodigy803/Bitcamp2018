@@ -7,14 +7,16 @@ import { AuthService } from '../../services/auth.service';
   styleUrls: ['./approval.component.css']
 })
 export class ApprovalComponent implements OnInit {
-  applications: Object[];
+  rfps: Object[];
 
   constructor(private authService: AuthService) { }
 
   ngOnInit() {
-    this.authService.readRfp().subscribe((rfps: any) => {
-      this.applications = rfps.msg;
-      console.log(this.applications);
+    this.authService.getRfp().subscribe((rfps: any) => {
+      console.log(rfps);
+
+      this.rfps = rfps.message;
+      console.log(this.rfps);
     },
     err => {
       console.log(err);
