@@ -18,7 +18,7 @@ router.post('/create', (req, res, next) => {
     const userId = req.body.userId;
     let rfpId = 0;
 
-    let newRFP    = new RFP({
+    let newRFP    =  new RFP({
 
         userId      : req.body.userId,
         proType     : req.body.proType,
@@ -28,13 +28,14 @@ router.post('/create', (req, res, next) => {
         basePrice   : req.body.amount,
         proImage    : "Default",
         rfpTime     : Date.now(),
-        approveTime : req.body.approveTime,
-        rfpstatus   : req.body.rfpstatus
+        approveTime : "Default",
+        rfpstatus   : "Submitted"
 
     });
 
-    RFP.save(newRFP, (err, saveRFP) => {
+    newRFP.save(newRFP, (err, saveRFP) => {
         if(err){
+            console.log(err);
             return res.json({success: false, message: 'Failed to Register Your Product'});
         }else {
             return res.json({success: true, message: 'RFP Submitted Successfully !'});

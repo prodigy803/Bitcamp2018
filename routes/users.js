@@ -166,7 +166,7 @@ router.post('/forgetpass', (req, res, next) => {
         const random = randomstring.generate(8);
 
         User.find({email: email}, (err, user) => {
-
+            
             if(err) {
 
                 return res.json({ success: false, msg: 'Email ID is Not Registered !' });
@@ -175,11 +175,10 @@ router.post('/forgetpass', (req, res, next) => {
 
                 const salt = bcrypt.genSaltSync(10);
                 const hash = bcrypt.hashSync(random, salt);
-                user.tPass = hash;
-                user.tPassTime = new Date();
+                user[0].tPass = hash;
+                user[0].tPassTime = new Date();
 
-                
-                user.save(function(err, mail) {
+                user[0].save(function(err, mail) {
 
                     if (err) {
 
@@ -194,7 +193,7 @@ router.post('/forgetpass', (req, res, next) => {
                             from: `"${config.name}" <${config.email}>`,
                             to: email,
                             subject: 'Reset Password Request ',
-                            html: `Hello ${user.userName},<br><br>
+                            html: `Hello ${user[0].userName},<br><br>
                             &nbsp;&nbsp;&nbsp;&nbsp; Your reset password token is <b>${random}</b>.
                             The token is valid for only 2 minutes.<br><br>
                             Thanks,<br>
@@ -226,21 +225,21 @@ router.post('/forgetpass', (req, res, next) => {
 
             }else {
 
-                const diff = new Date() - new Date(user.tPassTime);
+                const diff = new Date() - new Date(user[0].tPassTime);
                 const seconds = Math.floor(diff / 1000);
                 console.log(`Seconds : ${seconds}`);
 
                 if (seconds < 120) {
 
-                    if (bcrypt.compare(token, user.tPass)) {
+                    if (bcrypt.compare(token, user[0].tPass)) {
 
                         const salt = bcrypt.genSaltSync(10);
                         const hash = bcrypt.hashSync(newPassword, salt);
-                        user.password = hash;
-                        user.tPass = undefined;
-                        user.tPassTime = undefined;
+                        user[0].password = hash;
+                        user[0].tPass = undefined;
+                        user[0].tPassTime = undefined;
 
-                        user.save(function(err) {
+                        user[0].save(function(err) {
 
                             if (err) {
 
