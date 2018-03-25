@@ -17,7 +17,9 @@ const rfpSchema = new Schema({
     proImage    : String,
     rfpTime     : String,
     approveTime : String,
-    rfpstatus   : String
+    rfpstatus   : String,
+    bidStatus   : String,
+    bidPrice    : String
     
 });
 
